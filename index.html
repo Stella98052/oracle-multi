@@ -459,23 +459,29 @@ function scoreWeek(natalChart, weekJD) {
   const jupHouse = wholeSignHouse(transits.Jupiter, natalChart.asc);
   const jEff = JUPITER_HOUSE_EFFECT[jupHouse] || {};
   if (jEff.career)       areas['工作'] += jEff.career;
+  if (jEff.work)         areas['工作'] += jEff.work;
   if (jEff.finance)      areas['財務'] += jEff.finance;
   if (jEff.travel)       areas['交通'] += jEff.travel;
   if (jEff.health)       areas['健康'] += jEff.health;
   if (jEff.family || jEff.home) areas['家庭'] += (jEff.family||0) + (jEff.home||0);
-  if (jEff.social || jEff.friends) areas['人際'] += (jEff.social||0)+(jEff.friends||0);
+  if (jEff.social || jEff.friends || jEff.relationships || jEff.romance)
+    areas['人際'] += (jEff.social||0)+(jEff.friends||0)+(jEff.relationships||0)+(jEff.romance||0)*0.5;
   if (jEff.learning)     areas['學業'] += jEff.learning;
+  if (jEff.creativity)   areas['學業'] += jEff.creativity * 0.5;
+  if (jEff.spiritual || jEff.retreat) areas['運勢'] += ((jEff.spiritual||0)+(jEff.retreat||0))*0.5;
   if (jEff.overall)      Object.keys(areas).forEach(k=>areas[k]+=jEff.overall*0.3);
 
   // Saturn 過境宮位
   const satHouse = wholeSignHouse(transits.Saturn, natalChart.asc);
   const sEff = SATURN_HOUSE_EFFECT[satHouse] || {};
   if (sEff.finance)      areas['財務'] += sEff.finance;
+  if (sEff.work)         areas['工作'] += sEff.work;
   if (sEff.health)       areas['健康'] += sEff.health;
   if (sEff.family||sEff.home) areas['家庭'] += (sEff.family||0)+(sEff.home||0);
-  if (sEff.relationships) areas['人際'] += sEff.relationships;
+  if (sEff.relationships||sEff.social) areas['人際'] += (sEff.relationships||0)+(sEff.social||0);
   if (sEff.travel)       areas['交通'] += sEff.travel;
   if (sEff.career)       areas['工作'] += sEff.career;
+  if (sEff.spiritual)    areas['運勢'] += sEff.spiritual * 0.5;
   if (sEff.overall)      Object.keys(areas).forEach(k=>areas[k]+=sEff.overall*0.3);
 
   // 土星合本命月亮（最重要的修正因素）
@@ -523,8 +529,8 @@ const SUN_BEST_DAYS = {
   '獅子':[1,2,5], '處女':[3,5,1], '天秤':[5,3,0], '天蠍':[2,6,0],
   '射手':[4,1,3], '摩羯':[6,3,2], '水瓶':[6,3,1], '雙魚':[4,0,5]
 };
-function getLuckyMark(dayOfWeek, sunSign) {
-  const best = SUN_BEST_DAYS[sunSign] || [];
+function getLuckyMark(dayOfWeek, ascSign) {
+  const best = SUN_BEST_DAYS[ascSign] || SUN_BEST_DAYS['金牛'] || [];
   if (dayOfWeek === best[0]) return '⭐';
   if (dayOfWeek === best[1]) return '✦';
   return '';
@@ -630,7 +636,7 @@ function renderResult(name, natal, weekJD, weekDateStr, coords) {
   for (let i=0; i<7; i++) {
     const dt = new Date(wy, wm-1, wd+i);
     const dc = DAY_COLORS[dt.getDay()];
-    const lmark = getLuckyMark(dt.getDay(), sunSign);
+    const lmark = getLuckyMark(dt.getDay(), ascSign);
     const lborder = lmark==='⭐' ? 'outline:2px solid gold;border-radius:10px;' : lmark==='✦' ? 'outline:1px solid #c9a227;border-radius:10px;' : '';
     luckyHTML += `<div class="lucky-day" style="${lborder}">
       <div class="ldate">${(wd+i)}日<span style="font-size:.7rem;">${lmark}</span></div>
