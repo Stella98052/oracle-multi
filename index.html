@@ -453,7 +453,7 @@ function scoreWeek(natalChart, weekJD) {
     Mars:    planetLon(weekJD, 'Mars'),
   };
 
-  const areas = { 運勢:5, 健康:5, 家庭:5, 學業:5, 工作:5, 財務:5, 交通:5, 人際:5 };
+  const areas = { 運勢:5, 健康:5, 家庭:5, 學業:5, 工作:5, 財務:5, 交通:5, 人際:5, 愛情:5 };
 
   // Jupiter 過境宮位
   const jupHouse = wholeSignHouse(transits.Jupiter, natalChart.asc);
@@ -466,7 +466,7 @@ function scoreWeek(natalChart, weekJD) {
   if (jEff.family || jEff.home) areas['家庭'] += (jEff.family||0) + (jEff.home||0);
   if (jEff.social || jEff.friends || jEff.relationships)
     areas['人際'] += (jEff.social||0)+(jEff.friends||0)+(jEff.relationships||0);
-  if (jEff.romance)      areas['運勢'] += jEff.romance * 0.8;
+  if (jEff.romance)      areas['愛情'] += jEff.romance;
   if (jEff.learning)     areas['學業'] += jEff.learning;
   if (jEff.creativity)   areas['學業'] += jEff.creativity * 0.5;
   if (jEff.spiritual || jEff.retreat) areas['運勢'] += ((jEff.spiritual||0)+(jEff.retreat||0))*0.6;
@@ -695,7 +695,8 @@ function renderResult(name, natal, weekJD, weekDateStr, coords) {
           '家庭':'適合處理家務、修繕居所、深化家人情感，家庭氛圍本週最融洽。',
           '學業':'適合考試、進修、創作研究，學習吸收與創意能量本週最強。',
           '交通':'適合出行旅遊、拜訪遠方、處理文件，出行與溝通運本週順暢。',
-          '運勢':'整體精神能量與愛情運勢最旺，保持開放心態，好機緣本週最容易降臨。',
+          '運勢':'整體精神能量最旺，保持開放心態，好機緣本週最容易降臨。',
+          '愛情':'本週愛情能量最強，適合深化感情、表達心意、開放心態迎接新緣份。',
         };
         const advice = areaAdvice[topArea[0]] || '可優先投入資源在這個方向上。';
         return `根據你的本命盤（<span class="hl">${ascSign}上升</span>），本週<span class="hl">「${topArea[0]}」</span>能量最強。${advice}`;
