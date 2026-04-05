@@ -32,17 +32,14 @@ body{
 .sec-label{font-size:.72rem;color:var(--sub);letter-spacing:2px;margin-bottom:12px;}
 .form-row{margin-bottom:14px;}
 label{display:block;font-size:.82rem;color:var(--sub);margin-bottom:5px;}
-input,select{
+input{
   width:100%;background:var(--card);border:1px solid var(--border);
   border-radius:8px;padding:11px 14px;color:var(--text);
   font-size:.9rem;outline:none;
   -webkit-appearance:none;appearance:none;
 }
-input[type="date"]{
-  color-scheme:dark;
-  cursor:pointer;
-}
-input:focus,select:focus{border-color:var(--gold2);}
+input[type="date"]{color-scheme:dark;cursor:pointer;}
+input:focus{border-color:var(--gold2);}
 .date-hint{font-size:.72rem;color:var(--sub);margin-top:4px;}
 .btn-submit{
   width:100%;background:linear-gradient(135deg,var(--gold2),#9b7a00);
@@ -50,22 +47,41 @@ input:focus,select:focus{border-color:var(--gold2);}
   font-size:1rem;font-weight:700;cursor:pointer;margin-top:4px;
 }
 .btn-submit:active{opacity:.8;}
-#result{display:none;padding:0 20px 40px;max-width:500px;margin:0 auto;}
-.result-header{text-align:center;padding:20px 0 14px;}
+.err-box{
+  background:rgba(231,76,60,.08);border:1px solid rgba(231,76,60,.25);
+  border-radius:8px;padding:12px;margin-bottom:12px;
+  font-size:.82rem;color:var(--red);display:none;
+}
+#result{display:none;max-width:500px;margin:0 auto;}
+.result-header{text-align:center;padding:20px 20px 14px;}
 .result-header h2{font-size:1.2rem;color:var(--gold);margin-bottom:4px;}
 .result-header p{color:var(--sub);font-size:.8rem;}
-.signs-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:10px 0;}
+.signs-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:10px 0 0;}
 .sign-badge{
   background:rgba(240,192,64,.1);border:1px solid rgba(240,192,64,.25);
   border-radius:20px;padding:4px 12px;font-size:.8rem;
 }
+.lucky-bar{
+  background:var(--card);border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:14px 20px;
+}
+.lucky-bar h3{color:var(--gold);font-size:.8rem;letter-spacing:1px;margin-bottom:10px;}
+.lucky-row{display:flex;gap:8px;flex-wrap:wrap;}
+.lucky-item{
+  background:rgba(240,192,64,.07);border:1px solid rgba(240,192,64,.18);
+  border-radius:8px;padding:7px 12px;font-size:.82rem;text-align:center;
+  flex:1;min-width:80px;
+}
+.lucky-item .lk{color:var(--sub);font-size:.7rem;display:block;margin-bottom:2px;}
+.lucky-item .lv{color:var(--gold);font-weight:700;font-size:.82rem;}
+.main-pad{padding:0 20px 40px;}
 .rsec{font-size:.72rem;color:var(--sub);letter-spacing:2px;text-transform:uppercase;margin:18px 0 8px;}
 .scores-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;}
 .sc{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:10px 6px;text-align:center;}
 .sc .si{font-size:1.2rem;margin-bottom:2px;}
 .sc .sn{font-size:.68rem;color:var(--sub);margin-bottom:4px;}
 .sc .ss{font-size:.82rem;}
-.sc .st{font-size:.65rem;color:var(--sub);margin-top:2px;line-height:1.3;}
 .day-card{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:12px;margin-bottom:7px;}
 .day-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
 .day-name{font-weight:700;font-size:.88rem;}
@@ -77,18 +93,13 @@ input:focus,select:focus{border-color:var(--gold2);}
 .day-txt{font-size:.8rem;color:var(--sub);line-height:1.55;}
 .advice-box{
   background:rgba(78,205,196,.06);border:1px solid rgba(78,205,196,.2);
-  border-radius:9px;padding:14px;margin-bottom:8px;
+  border-radius:9px;padding:14px;
 }
 .advice-box h4{font-size:.82rem;color:var(--teal);margin-bottom:6px;}
 .advice-box p{font-size:.8rem;color:var(--sub);line-height:1.6;}
 .footer-note{
   text-align:center;color:var(--sub);font-size:.72rem;
-  padding:16px;border-top:1px solid var(--border);
-}
-.err-box{
-  background:rgba(231,76,60,.08);border:1px solid rgba(231,76,60,.25);
-  border-radius:8px;padding:12px;margin-bottom:12px;
-  font-size:.82rem;color:var(--red);display:none;
+  padding:16px 20px;border-top:1px solid var(--border);
 }
 </style>
 </head>
@@ -101,28 +112,23 @@ input:focus,select:focus{border-color:var(--gold2);}
 
 <div class="form-wrap">
   <div class="sec-label">📋 輸入基本資料</div>
-
   <div class="form-row">
     <label>稱呼（可選）</label>
     <input type="text" id="f-name" placeholder="例：小明、王老師">
   </div>
-
   <div class="form-row">
     <label>出生日期 *</label>
     <input type="date" id="f-bdate" max="2010-12-31" min="1900-01-01">
     <div class="date-hint">點擊選擇日期 · iOS 自動顯示滾輪選取器</div>
   </div>
-
   <div class="form-row">
     <label>出生時間（選填，用於估算上升星座）</label>
     <input type="time" id="f-btime">
   </div>
-
   <div class="form-row">
     <label>出生地點（選填）</label>
     <input type="text" id="f-place" placeholder="例：台北、東京、紐約">
   </div>
-
   <div class="err-box" id="err-msg"></div>
   <button class="btn-submit" onclick="generate()">✨ 產生我的週運報告</button>
 </div>
@@ -131,16 +137,19 @@ input:focus,select:focus{border-color:var(--gold2);}
   <div class="result-header">
     <h2 id="r-name">🔮 個人化週運</h2>
     <p>2026年 W3 · 4月6日 — 4月12日</p>
+    <div class="signs-row" id="r-signs"></div>
   </div>
-  <div class="signs-row" id="r-signs"></div>
 
-  <div style="padding:0 0 8px;">
+  <div class="lucky-bar">
+    <h3>✨ 本週幸運元素</h3>
+    <div class="lucky-row" id="r-lucky"></div>
+  </div>
+
+  <div class="main-pad">
     <div class="rsec">📊 九大領域週運</div>
     <div class="scores-grid" id="r-scores"></div>
-
     <div class="rsec">📅 每日運勢</div>
     <div id="r-days"></div>
-
     <div class="rsec">💡 本週建議</div>
     <div id="r-advice"></div>
   </div>
@@ -153,131 +162,178 @@ input:focus,select:focus{border-color:var(--gold2);}
 
 <script>
 var SIGNS = [
-  {m:1, d:20, n:'水瓶座', e:'♒'},{m:2, d:19, n:'雙魚座', e:'♓'},
-  {m:3, d:21, n:'牡羊座', e:'♈'},{m:4, d:20, n:'金牛座', e:'♉'},
-  {m:5, d:21, n:'雙子座', e:'♊'},{m:6, d:21, n:'巨蟹座', e:'♋'},
-  {m:7, d:23, n:'獅子座', e:'♌'},{m:8, d:23, n:'處女座', e:'♍'},
-  {m:9, d:23, n:'天秤座', e:'♎'},{m:10,d:23, n:'天蠍座', e:'♏'},
-  {m:11,d:22, n:'射手座', e:'♐'},{m:12,d:22, n:'摩羯座', e:'♑'}
+  {m:1,d:20,n:'水瓶座',e:'♒'},{m:2,d:19,n:'雙魚座',e:'♓'},
+  {m:3,d:21,n:'牡羊座',e:'♈'},{m:4,d:20,n:'金牛座',e:'♉'},
+  {m:5,d:21,n:'雙子座',e:'♊'},{m:6,d:21,n:'巨蟹座',e:'♋'},
+  {m:7,d:23,n:'獅子座',e:'♌'},{m:8,d:23,n:'處女座',e:'♍'},
+  {m:9,d:23,n:'天秤座',e:'♎'},{m:10,d:23,n:'天蠍座',e:'♏'},
+  {m:11,d:22,n:'射手座',e:'♐'},{m:12,d:22,n:'摩羯座',e:'♑'}
 ];
 
-function getSun(m, d) {
-  for (var i = 0; i < SIGNS.length; i++) {
-    if (m === SIGNS[i].m && d >= SIGNS[i].d) return SIGNS[i];
-    if (i < SIGNS.length - 1 && m === SIGNS[i+1].m && d < SIGNS[i+1].d) return SIGNS[i];
+function getSun(m,d){
+  for(var i=0;i<SIGNS.length;i++){
+    if(m===SIGNS[i].m&&d>=SIGNS[i].d)return SIGNS[i];
+    if(i<SIGNS.length-1&&m===SIGNS[i+1].m&&d<SIGNS[i+1].d)return SIGNS[i];
   }
-  if (m === 1 && d < 20) return {n:'摩羯座', e:'♑'};
-  if (m === 12 && d >= 22) return {n:'摩羯座', e:'♑'};
-  return {n:'金牛座', e:'♉'};
+  if(m===1&&d<20)return{n:'摩羯座',e:'♑'};
+  if(m===12&&d>=22)return{n:'摩羯座',e:'♑'};
+  return{n:'金牛座',e:'♉'};
 }
 
-function getAsc(h, mi) {
-  var ASC = ['天秤座','天蠍座','射手座','摩羯座','水瓶座','雙魚座',
-             '牡羊座','金牛座','雙子座','巨蟹座','獅子座','處女座'];
-  return ASC[Math.floor((h * 60 + mi) / (1440 / 12)) % 12];
+function getAsc(h,mi){
+  var A=['天秤座','天蠍座','射手座','摩羯座','水瓶座','雙魚座',
+         '牡羊座','金牛座','雙子座','巨蟹座','獅子座','處女座'];
+  return A[Math.floor((h*60+mi)/(1440/12))%12];
 }
 
-var DB = {
-  '牡羊座':{sc:[5,4,4,3,4,4,5,4,3],days:['平穩整頓','能量充沛','溝通順暢','小心摩擦','觀察思考','展現自信','回顧計畫'],tip:'金星順行，積壓人際開始鬆動。4/11-12最佳社交日，主動出擊。'},
-  '金牛座':{sc:[5,5,4,4,4,3,4,5,4],days:['返台調整','效率極高','最佳準備日','深度思考','廣納意見','衝刺關鍵','慶祝自己'],tip:'守護星金星4/12順行，你是本週最大受益星座！口試、求職、財務計畫全面加持，全力以赴。'},
-  '雙子座':{sc:[4,5,5,3,4,4,4,4,4],days:['思維跳躍','資訊處理強','表達最佳','稍事休息','整合想法','溝通順暢','輕鬆收尾'],tip:'木星在你的星座，2026年是雙子的黃金年！本週水星牡羊加持，溝通表達無往不利。'},
-  '巨蟹座':{sc:[3,4,3,5,5,3,4,5,5],days:['保護自己','慢慢展開','情緒敏感','家庭優先','直覺最強','謹慎評估','靜心整理'],tip:'火星在巨蟹，內心能量強大。先照顧好自己才能照顧他人，家人關係是本週重點。'},
-  '獅子座':{sc:[4,3,4,4,3,5,5,4,4],days:['慢熱醞釀','整理方向','社交活躍','調整步伐','重新聚焦','閃耀時刻','享受關注'],tip:'本週適合展現成果、與人分享成就，展現你與生俱來的魅力。'},
-  '處女座':{sc:[5,5,3,4,5,4,4,5,5],days:['細節處理','分析完美','注意休息','服務他人','效率衝刺','謹慎出行','整理完成'],tip:'土星在雙魚（對宮）提醒平衡付出與接受。本週特別重視完美，但記得適當放鬆。'},
-  '天秤座':{sc:[4,4,5,5,3,4,5,4,4],days:['優雅開展','審美最佳','人際高峰','協調關係','稍事休息','美麗顯現','和諧收尾'],tip:'守護星金星4/12順行，天秤迎來能量解凍！感情、美學計畫、人際往來全面好轉。'},
-  '天蠍座':{sc:[3,4,4,4,5,3,4,5,4],days:['深度調查','財務整理','變革意識','情感深化','直覺最準','謹慎行動','洞察完成'],tip:'月亮本週初過天蠍，直覺力超強。善用洞察力，週三後進入更務實的摩羯能量。'},
-  '射手座':{sc:[4,3,4,3,5,4,5,5,5],days:['哲思模式','學習閱讀','探索想法','整理信念','自由奔放','冒險嘗試','樂觀收週'],tip:'守護星木星在雙子，2026上半年擴展視野，旅遊與學習帶來豐富啟發。'},
-  '摩羯座':{sc:[5,4,4,3,5,3,4,4,5],days:['踏實執行','目標清晰','努力衝刺','注意壓力','重要判斷','展現成果','穩健收尾'],tip:'月亮週三四在摩羯，精神狀態回到最佳！土星在雙魚提醒保持身心靈平衡。'},
-  '水瓶座':{sc:[4,5,4,4,4,5,4,4,4],days:['創新醞釀','人脈拓展','技術突破','個人反思','理性分析','社群連結','自由探索'],tip:'冥王星入水瓶（長期），人生正在深層變革。本週水星牡羊帶來行動力，把想法付諸實踐。'},
-  '雙魚座':{sc:[3,4,3,5,4,4,4,5,5],days:['靈感湧現','保護邊界','藝術創作','心靈連結','直覺清晰','溫和展現','夢境豐富'],tip:'土星在你的星座近尾聲，2026年是雙魚的重要轉型期。靈性修行與服務是最高召喚。'}
+var DB={
+  '牡羊座':{
+    sc:[5,4,4,3,4,4,5,4,3],
+    days:['平穩整頓','能量充沛','溝通順暢','小心摩擦','觀察思考','展現自信','回顧計畫'],
+    tip:'金星順行，積壓人際開始鬆動。4/11-12 最佳社交日，主動出擊。',
+    lucky:{color:'紅・珊瑚橘',num:'1、9',day:'週一・週四',word:'衝刺・破冰'}
+  },
+  '金牛座':{
+    sc:[5,5,4,4,4,3,4,5,4],
+    days:['返台調整','效率極高','最佳準備日','深度思考','廣納意見','衝刺關鍵','慶祝自己'],
+    tip:'守護星金星 4/12 順行，你是本週最大受益星座！口試、求職、財務計畫全面加持。',
+    lucky:{color:'靛藍・象牙白',num:'6、14、21',day:'週三・週四',word:'重生・展開'}
+  },
+  '雙子座':{
+    sc:[4,5,5,3,4,4,4,4,4],
+    days:['思維跳躍','資訊處理強','表達最佳','稍事休息','整合想法','溝通順暢','輕鬆收尾'],
+    tip:'木星在你的星座，2026 年是雙子的黃金年！水星牡羊加持，溝通表達無往不利。',
+    lucky:{color:'黃・薄荷綠',num:'3、5、12',day:'週三・週五',word:'溝通・連結'}
+  },
+  '巨蟹座':{
+    sc:[3,4,3,5,5,3,4,5,5],
+    days:['保護自己','慢慢展開','情緒敏感','家庭優先','直覺最強','謹慎評估','靜心整理'],
+    tip:'火星在巨蟹，內心能量強大。先照顧好自己，家人關係是本週重點。',
+    lucky:{color:'銀・珍珠白',num:'2、7',day:'週一・週六',word:'守護・直覺'}
+  },
+  '獅子座':{
+    sc:[4,3,4,4,3,5,5,4,4],
+    days:['慢熱醞釀','整理方向','社交活躍','調整步伐','重新聚焦','閃耀時刻','享受關注'],
+    tip:'本週適合展現成果、與人分享成就，展現你與生俱來的魅力與自信。',
+    lucky:{color:'金・橙',num:'1、5、10',day:'週日・週二',word:'閃耀・展現'}
+  },
+  '處女座':{
+    sc:[5,5,3,4,5,4,4,5,5],
+    days:['細節處理','分析完美','注意休息','服務他人','效率衝刺','謹慎出行','整理完成'],
+    tip:'土星在雙魚（對宮）提醒平衡付出與接受。本週重視完美，記得適當放鬆。',
+    lucky:{color:'橄欖綠・米白',num:'4、8',day:'週三・週六',word:'精準・服務'}
+  },
+  '天秤座':{
+    sc:[4,4,5,5,3,4,5,4,4],
+    days:['優雅開展','審美最佳','人際高峰','協調關係','稍事休息','美麗顯現','和諧收尾'],
+    tip:'守護星金星 4/12 順行，天秤迎來能量解凍！感情、美學計畫、人際往來全面好轉。',
+    lucky:{color:'玫瑰粉・淡藍',num:'6、15',day:'週五・週日',word:'和諧・美麗'}
+  },
+  '天蠍座':{
+    sc:[3,4,4,4,5,3,4,5,4],
+    days:['深度調查','財務整理','變革意識','情感深化','直覺最準','謹慎行動','洞察完成'],
+    tip:'月亮本週初過天蠍，直覺力超強。善用洞察力，週三後進入更務實的摩羯能量。',
+    lucky:{color:'深紅・黑',num:'8、11',day:'週二・週四',word:'洞察・蛻變'}
+  },
+  '射手座':{
+    sc:[4,3,4,3,5,4,5,5,5],
+    days:['哲思模式','學習閱讀','探索想法','整理信念','自由奔放','冒險嘗試','樂觀收週'],
+    tip:'守護星木星在雙子，2026 上半年擴展視野，旅遊與學習帶來豐富啟發。',
+    lucky:{color:'紫・寶藍',num:'3、9',day:'週四・週日',word:'探索・擴展'}
+  },
+  '摩羯座':{
+    sc:[5,4,4,3,5,3,4,4,5],
+    days:['踏實執行','目標清晰','努力衝刺','注意壓力','重要判斷','展現成果','穩健收尾'],
+    tip:'月亮週三四在摩羯，精神狀態回到最佳！土星在雙魚提醒保持身心靈平衡。',
+    lucky:{color:'深棕・墨綠',num:'4、8、22',day:'週三・週五',word:'踏實・登頂'}
+  },
+  '水瓶座':{
+    sc:[4,5,4,4,4,5,4,4,4],
+    days:['創新醞釀','人脈拓展','技術突破','個人反思','理性分析','社群連結','自由探索'],
+    tip:'冥王星入水瓶（長期），人生正在深層變革。本週水星牡羊帶來行動力，把想法付諸實踐。',
+    lucky:{color:'電藍・銀',num:'4、11',day:'週二・週六',word:'創新・突破'}
+  },
+  '雙魚座':{
+    sc:[3,4,3,5,4,4,4,5,5],
+    days:['靈感湧現','保護邊界','藝術創作','心靈連結','直覺清晰','溫和展現','夢境豐富'],
+    tip:'土星在你的星座近尾聲，2026 年是雙魚的重要轉型期。靈性修行與服務是最高召喚。',
+    lucky:{color:'海藍・薰衣草',num:'7、12',day:'週一・週五',word:'靈感・流動'}
+  }
 };
 
-var DOMAINS = ['事業求職','學習考試','財務理財','感情人際','家庭母親','健康身體','旅行交通','心靈修行','志工服務'];
-var ICONS   = ['💼','📚','💰','❤️','🏠','💪','✈️','🧘','🌱'];
-var WDAYS   = ['一','二','三','四','五','六','日'];
-var WDATES  = ['4/6','4/7','4/8','4/9','4/10','4/11','4/12'];
-var LEVELS  = ['med','med','high','high','med','high','high'];
-var LTEXTS  = ['平穩','平穩','幸運','幸運','調整','重要','關鍵'];
+var DOMAINS=['事業求職','學習考試','財務理財','感情人際','家庭母親','健康身體','旅行交通','心靈修行','志工服務'];
+var ICONS=['💼','📚','💰','❤️','🏠','💪','✈️','🧘','🌱'];
+var WDAYS=['一','二','三','四','五','六','日'];
+var WDATES=['4/6','4/7','4/8','4/9','4/10','4/11','4/12'];
+var LEVELS=['med','med','high','high','med','high','high'];
+var LTEXTS=['平穩','平穩','幸運','幸運','調整','重要','關鍵'];
 
-function stars(n) {
-  return '⭐'.repeat(n) + '<span style="opacity:.2">' + '⭐'.repeat(5 - n) + '</span>';
+function stars(n){
+  return '⭐'.repeat(n)+'<span style="opacity:.2">'+'⭐'.repeat(5-n)+'</span>';
 }
 
-function showErr(msg) {
-  var el = document.getElementById('err-msg');
-  el.style.display = 'block';
-  el.textContent = msg;
+function showErr(msg){
+  var el=document.getElementById('err-msg');
+  el.style.display='block';el.textContent=msg;
 }
 
-function hideErr() {
-  document.getElementById('err-msg').style.display = 'none';
-}
+function generate(){
+  document.getElementById('err-msg').style.display='none';
+  var dateVal=document.getElementById('f-bdate').value;
+  var name=document.getElementById('f-name').value.trim();
+  var timeVal=document.getElementById('f-btime').value;
+  var place=document.getElementById('f-place').value.trim();
 
-function generate() {
-  hideErr();
-  var dateVal = document.getElementById('f-bdate').value;
-  var name    = document.getElementById('f-name').value.trim();
-  var timeVal = document.getElementById('f-btime').value;
-  var place   = document.getElementById('f-place').value.trim();
+  if(!dateVal){showErr('請選擇出生日期！');return;}
+  var parts=dateVal.split('-');
+  var year=parseInt(parts[0]),month=parseInt(parts[1]),day=parseInt(parts[2]);
+  if(year<1900||year>2010){showErr('請輸入正確的出生年份（1900-2010）');return;}
 
-  if (!dateVal) {
-    showErr('請選擇出生日期！');
-    return;
+  var sun=getSun(month,day);
+  var ascStr='';
+  if(timeVal){var tp=timeVal.split(':');ascStr=getAsc(parseInt(tp[0]),parseInt(tp[1]));}
+
+  var data=DB[sun.n]||DB['金牛座'];
+
+  document.getElementById('r-name').textContent='🔮 '+(name?name+'的':'')+'個人化週運';
+
+  var signsHTML='<div class="sign-badge">☀️ 太陽 '+sun.e+' '+sun.n+'</div>';
+  if(ascStr)signsHTML+='<div class="sign-badge">⬆️ 上升 '+ascStr+'</div>';
+  signsHTML+='<div class="sign-badge">🎂 '+year+'/'+month+'/'+day+'</div>';
+  if(place)signsHTML+='<div class="sign-badge">📍 '+place+'</div>';
+  document.getElementById('r-signs').innerHTML=signsHTML;
+
+  var lk=data.lucky;
+  document.getElementById('r-lucky').innerHTML=
+    '<div class="lucky-item"><span class="lk">幸運色</span><span class="lv">'+lk.color+'</span></div>'+
+    '<div class="lucky-item"><span class="lk">幸運數字</span><span class="lv">'+lk.num+'</span></div>'+
+    '<div class="lucky-item"><span class="lk">幸運日</span><span class="lv">'+lk.day+'</span></div>'+
+    '<div class="lucky-item"><span class="lk">關鍵詞</span><span class="lv">'+lk.word+'</span></div>';
+
+  var scHTML='';
+  for(var i=0;i<DOMAINS.length;i++){
+    scHTML+='<div class="sc"><div class="si">'+ICONS[i]+'</div>'+
+            '<div class="sn">'+DOMAINS[i]+'</div>'+
+            '<div class="ss">'+stars(data.sc[i])+'</div></div>';
   }
+  document.getElementById('r-scores').innerHTML=scHTML;
 
-  var parts = dateVal.split('-');
-  var year  = parseInt(parts[0]);
-  var month = parseInt(parts[1]);
-  var day   = parseInt(parts[2]);
-
-  if (year < 1900 || year > 2010) {
-    showErr('請輸入正確的出生年份（1900–2010）');
-    return;
+  var dHTML='';
+  for(var j=0;j<7;j++){
+    dHTML+='<div class="day-card">'+
+           '<div class="day-top"><div><span class="day-name">週'+WDAYS[j]+'</span>'+
+           ' <span class="day-date">'+WDATES[j]+'</span></div>'+
+           '<span class="day-lv lv-'+LEVELS[j]+'">'+LTEXTS[j]+'</span></div>'+
+           '<div class="day-txt">'+(data.days[j]||'保持平衡，觀察局勢。')+'</div></div>';
   }
+  document.getElementById('r-days').innerHTML=dHTML;
 
-  var sun = getSun(month, day);
-  var ascStr = '';
-  if (timeVal) {
-    var tp = timeVal.split(':');
-    ascStr = getAsc(parseInt(tp[0]), parseInt(tp[1]));
-  }
+  document.getElementById('r-advice').innerHTML=
+    '<div class="advice-box"><h4>✨ '+sun.n+'本週重點</h4><p>'+data.tip+'</p></div>';
 
-  var data = DB[sun.n] || DB['金牛座'];
-
-  document.getElementById('r-name').textContent = '🔮 ' + (name ? name + '的' : '') + '個人化週運';
-
-  var signsHTML = '<div class="sign-badge">☀️ 太陽 ' + sun.e + ' ' + sun.n + '</div>';
-  if (ascStr) signsHTML += '<div class="sign-badge">⬆️ 上升 ' + ascStr + '</div>';
-  signsHTML += '<div class="sign-badge">🎂 ' + year + '/' + month + '/' + day + '</div>';
-  if (place) signsHTML += '<div class="sign-badge">📍 ' + place + '</div>';
-  document.getElementById('r-signs').innerHTML = signsHTML;
-
-  var scHTML = '';
-  for (var i = 0; i < DOMAINS.length; i++) {
-    scHTML += '<div class="sc"><div class="si">' + ICONS[i] + '</div>' +
-              '<div class="sn">' + DOMAINS[i] + '</div>' +
-              '<div class="ss">' + stars(data.sc[i]) + '</div></div>';
-  }
-  document.getElementById('r-scores').innerHTML = scHTML;
-
-  var dHTML = '';
-  for (var j = 0; j < 7; j++) {
-    dHTML += '<div class="day-card">' +
-             '<div class="day-top">' +
-             '<div><span class="day-name">週' + WDAYS[j] + '</span>' +
-             ' <span class="day-date">' + WDATES[j] + '</span></div>' +
-             '<span class="day-lv lv-' + LEVELS[j] + '">' + LTEXTS[j] + '</span></div>' +
-             '<div class="day-txt">' + (data.days[j] || '保持平衡，觀察局勢。') + '</div>' +
-             '</div>';
-  }
-  document.getElementById('r-days').innerHTML = dHTML;
-
-  document.getElementById('r-advice').innerHTML =
-    '<div class="advice-box"><h4>✨ ' + sun.n + '本週重點</h4><p>' + data.tip + '</p></div>';
-
-  var res = document.getElementById('result');
-  res.style.display = 'block';
-  res.scrollIntoView({behavior: 'smooth'});
+  var res=document.getElementById('result');
+  res.style.display='block';
+  res.scrollIntoView({behavior:'smooth'});
 }
 </script>
 </body>
