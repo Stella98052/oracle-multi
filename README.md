@@ -1,6 +1,6 @@
 # oracle-multi
 
-多人版占星週運展示（十二宮位簡化版）。
+多人版占星週運展示（十二宮位簡化版）。https://stella98052.github.io/oracle-multi/
 
 這個 repo 建議用來放「簡化、多使用者共用」的占星週運頁面，例如：
 
