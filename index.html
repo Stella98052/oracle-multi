@@ -75,8 +75,8 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .msheet{background:#0e0e1c;border:1px solid var(--border);border-radius:16px 16px 0 0;padding:16px 14px 32px;width:100%;max-width:480px;max-height:80vh;overflow-y:auto;overflow-x:hidden;word-break:break-all}
 .mhead{display:flex;align-items:center;gap:8px;margin-bottom:10px}
 .mclose{margin-left:auto;background:none;border:none;color:var(--dim);font-size:1.2rem;cursor:pointer}
-.mtrend{background:rgba(124,111,160,.12);border-left:3px solid var(--violet);border-radius:0 7px 7px 0;padding:8px 11px;font-size:.8rem;color:var(--vl);line-height:1.72;margin-bottom:10px}
-.mex{margin-top:8px;font-size:.78rem;color:var(--dim);line-height:1.7}
+.mtrend{background:rgba(124,111,160,.12);border-left:3px solid var(--violet);border-radius:0 7px 7px 0;padding:8px 11px;font-size:.78rem;color:var(--text);line-height:1.72;margin-bottom:10px}
+.mex{margin-top:8px;font-size:.78rem;color:var(--text);line-height:1.7}
 .macts{list-style:none}
 .macts li{padding:6px 0;font-size:.82rem;color:var(--text);line-height:1.5;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:7px}
 .macts li:before{content:'▸';color:var(--gold);flex-shrink:0}
@@ -150,7 +150,7 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
   <div class="sec" style="margin-top:15px"><div class="slbl" id="sl3">📅 每日運勢</div><div id="dailyList"></div></div>
   <div class="sec" style="margin-top:15px">
     <div class="slbl">🜁 十二宮位說明</div>
-    <div id="houseNotes" style="font-size:.78rem;color:var(--dim);line-height:1.7;"></div>
+    <div id="houseNotes" style="font-size:.8rem;color:var(--text);line-height:1.7;"></div>
   </div>
   <div style="text-align:center;padding:14px 0 4px;font-size:.62rem;color:var(--dim)">免責聲明： 本站僅供占星學術研究參考，採用 Placidus 宮位制計算（同 astro.com），不具任何決策建議，使用者需自負風險。</div>
 </div>
@@ -163,7 +163,7 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
       <span style="font-size:.92rem;color:var(--gold);font-weight:600" id="dTitle"></span>
       <button class="mclose" onclick="closeModal()">✕</button>
     </div>
-    <div id="dStars" style="font-size:1rem;margin-bottom:10px"></div>
+    <div id="dStars" style="font-size:.8rem;margin-bottom:10px"></div>
     <div class="mtrend" id="dTrend"></div>
     <ul class="macts" id="dActs"></ul>
     <div class="mex" id="dEx"></div>
