@@ -52,7 +52,7 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .wnb:hover{border-color:var(--gold);color:var(--gold)}
 .wlbl{flex:1;text-align:center;font-size:1rem;color:var(--gold2);padding:0 4px;line-height:1.4;word-break:break-all}
 .sec{padding:13px 12px 0}
-.slbl{font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px;word-break:break-all}
+.slbl{font-family:'Cinzel',serif;font-size:.82rem;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px;word-break:break-all}
 .slbl::after{content:'';flex:1;height:1px;background:var(--border)}
 .tip-item{font-size:1.02rem;color:var(--gold2);font-weight:700;line-height:1.6;margin-bottom:6px;word-break:break-all;white-space:normal}
 .lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
@@ -62,11 +62,11 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
 .atile{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:9px 4px 8px;text-align:center;cursor:pointer;transition:all .2s;overflow:hidden;word-break:break-all;min-width:0}
 .atile:hover{border-color:rgba(201,168,76,.5);transform:translateY(-2px)}
-.drow{display:flex;align-items:flex-start;gap:7px;padding:9px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;margin-bottom:8px;flex-wrap:wrap}
-.dr-d{font-size:1.08rem;color:var(--gold2);min-width:74px;flex-shrink:0}
-.dr-moon{font-size:1.02rem;color:var(--vl);min-width:56px;flex-shrink:0;letter-spacing:-.01em}
+.drow{display:flex;align-items:flex-start;gap:8px;padding:10px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;margin-bottom:8px;flex-wrap:wrap}
+.dr-d{font-size:1.06rem;color:var(--gold2);min-width:80px;flex-shrink:0;line-height:1.25}
+.dr-moon{font-size:.96rem;color:var(--vl);letter-spacing:-.01em}
 .dr-t{font-size:1.02rem;color:var(--text);flex:1;line-height:1.6;min-width:0;word-break:break-all}
-.dtag{font-size:.8rem;padding:2px 7px;border-radius:8px;border:1px solid;flex-shrink:0;white-space:nowrap}
+.dtag{font-size:.78rem;padding:2px 7px;border-radius:8px;border:1px solid;flex-shrink:0;white-space:nowrap}
 .dtag.up{border-color:rgba(93,191,138,.4);color:var(--green)}
 .dtag.mid{border-color:var(--border);color:var(--gold)}
 .dtag.low{border-color:rgba(224,112,112,.3);color:var(--red)}
@@ -262,7 +262,7 @@ function renderReport(){if(!USER)return;var f=FL[LANG],SIGNS=LANG==='zh'?SIGNS_Z
   var tips=[],i;for(i=0;i<wd.daily.length;i++){var d=wd.daily[i];if(d.cls==='low' && tips.length<2){tips.push((LANG==='zh'?'• ':'• ')+d.d+(LANG==='zh'?'：':' – ')+d.t);} }var maxIdx=0,maxVal=-1;for(i=0;i<wd.sc.length;i++){if(wd.sc[i]>maxVal){maxVal=wd.sc[i];maxIdx=i;}}tips.push(LANG==='zh'?'• '+AREAS[maxIdx]+'：本週能量特別強，適合優先安排相關重要事項。':'• '+AREAS[maxIdx]+': highlighted; prioritize related actions this week.');if(tips.length>3)tips=tips.slice(0,3);document.getElementById('tipTitle').textContent=LANG==='zh'?'⚠ 本週重大提示':'⚠ Key Alerts This Week';var kh='';for(i=0;i<tips.length;i++)kh+='<div class="tip-item">'+tips[i]+'</div>';document.getElementById('keyTips').innerHTML=kh;
   document.getElementById('rAva').textContent=SIGN_EM[USER.sun];var yr2026=new Date(CWK).getFullYear();document.getElementById('rName').textContent=USER.name+(LANG==='zh'?' 的個人化週運 '+yr2026:' — Personal Weekly '+yr2026);document.getElementById('rTags').innerHTML='<span class="tag">🎂 '+USER.dv.replace(/-/g,'/')+'</span>'+'<span class="tag">📍 '+USER.city+'</span>'+'<span class="tag">☀️ '+(LANG==='zh'?'太陽 ':'')+SIGNS[USER.sun]+(LANG==='zh'?'座':'')+'</span>'+'<span class="tag">↑ '+(LANG==='zh'?'上升 ':'')+SIGNS[USER.ris]+(LANG==='zh'?'座 ':' ')+USER.risDeg+'°</span>'+'<span class="tag">'+(LANG==='zh'?'✶ 幸運數字：':'✶ Lucky numbers: ')+nums.join('·')+'</span>';document.getElementById('rSrc').textContent=f.src;document.getElementById('edit-btn').textContent=f.edit;document.getElementById('save-btn').textContent=f.save;document.getElementById('wLbl').textContent='W'+wn+' · '+fmtRange(CWK);
   document.getElementById('luckyGrid').innerHTML='<div class="lt"><div class="llt">'+f.ll[0]+'</div><div class="llv" style="display:flex;align-items:center;justify-content:center;gap:6px"><span style="width:10px;height:10px;border-radius:50%;background:'+wd.colCSS+';flex-shrink:0;display:inline-block"></span>'+wd.col+'</div></div>'+'<div class="lt"><div class="llt">'+f.ll[2]+'</div><div class="llv">'+wd.day+'</div></div>'+'<div class="lt"><div class="llt">'+f.ll[3]+'</div><div class="llv">'+wd.kw+'</div></div>';
-  var rb=[USER.ris%12,(USER.ris+4)%12],ah='';for(var ai=0;ai<12;ai++){var sc=wd.sc[ai];if(rb.indexOf(ai)>=0)sc=Math.min(5,sc+1);ah+='<div class="atile" onclick="openDetail('+ai+')">'+'<div style="font-size:1.4rem;margin-bottom:5px">'+AREAS_IC[ai]+'</div>'+'<div style="font-size:.97rem;color:var(--text);margin-bottom:4px;word-break:break-all;line-height:1.35;min-height:2.7em;display:flex;align-items:flex-end;justify-content:center">'+AREAS[ai]+'</div>'+'<div>'+stars(sc)+'</div></div>'; }document.getElementById('areasGrid').innerHTML=ah;var dh='';for(var di=0;di<wd.daily.length;di++){var d2=wd.daily[di];dh+='<div class="drow">'+'<div class="dr-d">'+d2.d+'</div>'+'<div class="dr-moon">'+d2.moon+'</div>'+'<div class="dr-t">'+d2.t+'</div>'+'<span class="dtag '+d2.cls+'">'+d2.tag+'</span></div>'; }document.getElementById('dailyList').innerHTML=dh;document.getElementById('sl1').textContent=f.sl[0];document.getElementById('sl2').textContent=f.sl[1];document.getElementById('sl3').textContent=f.sl[2];
+  var rb=[USER.ris%12,(USER.ris+4)%12],ah='';for(var ai=0;ai<12;ai++){var sc=wd.sc[ai];if(rb.indexOf(ai)>=0)sc=Math.min(5,sc+1);ah+='<div class="atile" onclick="openDetail('+ai+')">'+'<div style="font-size:1.4rem;margin-bottom:5px">'+AREAS_IC[ai]+'</div>'+'<div style="font-size:.97rem;color:var(--text);margin-bottom:4px;word-break:break-all;line-height:1.35;min-height:2.7em;display:flex;align-items:flex-end;justify-content:center">'+AREAS[ai]+'</div>'+'<div>'+stars(sc)+'</div></div>'; }document.getElementById('areasGrid').innerHTML=ah;var dh='';for(var di=0;di<wd.daily.length;di++){var d2=wd.daily[di];dh+='<div class="drow">'+'<div class="dr-d">'+d2.d+'<br><span class="dr-moon">'+d2.moon+'</span></div>'+'<div class="dr-t">'+d2.t+'</div>'+'<span class="dtag '+d2.cls+'">'+d2.tag+'</span></div>'; }document.getElementById('dailyList').innerHTML=dh;document.getElementById('sl1').textContent=f.sl[0];document.getElementById('sl2').textContent=f.sl[1];document.getElementById('sl3').textContent=f.sl[2];
   var notes="";for(var hi=0;hi<12;hi++){var label=(LANG==='zh'?AREAS_ZH[hi]:AREAS_EN[hi]);var ex=(LANG==='zh'?TRENDS_ZH[hi][2]:TRENDS_EN[hi][2]);notes+="<div style\"margin-bottom:6px\"><strong>"+label+"</strong>："+ex+"</div>";}var hn=document.getElementById("houseNotes");if(hn)hn.innerHTML=notes;}
 function openDetail(ai){
   if(!USER)return;
@@ -371,5 +371,15 @@ function getTransitingPlanets(wk, risSign, houseIdx) {
   return planets;
 }
 </script>
+
+<!-- LESSON LEARNED: 商業版 UI / Product Lessons
+1. 商業模式必須先定義品牌感與購買者體感，不能先做工具風格再補裝飾。
+2. 中英版所有文案與說明必須同步修改，避免只改單一語系。
+3. 任何 weekly JSON 皆應視為年度檔，前端要限制在 2026/01/01–2026/12/31。
+4. 減少同一區塊的字級種類，商業 App 以 1–2 種尺寸為主。
+5. 移除欄位後，版面 grid 與對齊必須一併重做，避免殘留空格與誤導。
+6. 修改壓縮後 JS 必須做語法檢查，避免一個殘字串讓整個 App 不動。
+7. 日/週/宮位等核心資訊的結構先穩定，再做視覺細節優化。 
+-->
 </body>
 </html>
