@@ -300,7 +300,7 @@ function openDetail(ai){
     }
   }
   document.getElementById('modal').classList.add('open');
-}tblock.innerHTML=lbl+th;}else{tblock.innerHTML='<div style="font-size:.84rem;color:#8880a8;padding:4px 0">'+(LANG==='zh'?'☽ 本週無主要行星過境此宮，能量相對平靜。':'☽ No major planets transiting this house this week.')+'</div>';}}document.getElementById('modal').classList.add('open');}
+}
 function closeModal(){document.getElementById('modal').classList.remove('open');}
 function changeWeek(d){var dt=new Date(CWK);dt.setDate(dt.getDate()+d*7);CWK=getMon(dt);renderReport();}
 function drawBg(){var c=document.getElementById('bg');if(!c)return;var ctx=c.getContext('2d');c.width=window.innerWidth;c.height=window.innerHeight;var g=ctx.createRadialGradient(c.width/2,0,0,c.width/2,c.height,c.height);g.addColorStop(0,'#0e0e22');g.addColorStop(1,'#06060e');ctx.fillStyle=g;ctx.fillRect(0,0,c.width,c.height);for(var i=0;i<200;i++){var x=Math.random()*c.width,y=Math.random()*c.height;ctx.beginPath();ctx.arc(x,y,Math.random()*1.2+.1,0,6.28);ctx.fillStyle='rgba(255,255,255,'+(Math.random()*.7+.1)+')';ctx.fill();}for(var j=0;j<10;j++){ctx.beginPath();ctx.arc(Math.random()*c.width,Math.random()*c.height,1.5,0,6.28);ctx.fillStyle='rgba(201,168,76,.55)';ctx.fill();}}
