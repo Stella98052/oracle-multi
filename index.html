@@ -307,5 +307,35 @@ function drawBg(){var c=document.getElementById('bg');if(!c)return;var ctx=c.get
 window.addEventListener('resize',drawBg);
 window.onload=function(){drawBg();document.querySelectorAll('.lb').forEach(function(b){b.classList.toggle('active',b.dataset.l===LANG);});var saved=localStorage.getItem('oracle_u');if(saved){try{USER=JSON.parse(saved);document.getElementById('formPage').style.display='none';document.getElementById('reportPage').style.display='block';renderReport();}catch(e){localStorage.removeItem('oracle_u');renderForm();}}else{renderForm();}document.getElementById('modal').addEventListener('click',function(e){if(e.target===this)closeModal();});};
 </script>
+
+<script>
+// Load weekly transit signs from JSON and map to natal houses
+var WEEKLY_TRANSITS = null;
+fetch('weekly_transit_signs_2026.json')
+  .then(function(r){ return r.json(); })
+  .then(function(data){ WEEKLY_TRANSITS = data; if (typeof USER !== 'undefined' && USER) { renderReport(); } })
+  .catch(function(err){ WEEKLY_TRANSITS = null; });
+
+// Override getTransitingPlanets to use JSON data
+function getTransitingPlanets(wk, risSign, houseIdx) {
+  if (!WEEKLY_TRANSITS) return [];
+  var d = new Date(wk);
+  var y = d.getFullYear();
+  var wn = getWN(wk);
+  var key = y + '-' + (wn < 10 ? ('0' + wn) : wn);
+  var rec = WEEKLY_TRANSITS[key];
+  if (!rec || !rec.planets) return [];
+  var planets = [];
+  for (var i = 0; i < rec.planets.length; i++) {
+    var p = rec.planets[i];
+    var planetSign = p.signIndex;
+    var nh = (planetSign - risSign + 12) % 12;
+    if (nh === houseIdx) {
+      planets.push({ name: p.planetIndex, sign: planetSign });
+    }
+  }
+  return planets;
+}
+</script>
 </body>
 </html>
