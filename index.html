@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>✦ 個人化占星週報 2026 · 十二宮位</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Cinzel:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
 :root{--bg:#09090f;--card:#12121e;--border:rgba(201,168,76,.22);--gold:#c9a84c;--gold2:#f0d080;--violet:#7c6fa0;--vl:#b0a8cc;--text:#e4ddf2;--dim:#8880a8;--green:#5dbf8a;--red:#e07070;}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{max-width:100%;overflow-x:hidden}body{font-family:'Noto Serif TC',serif;background:var(--bg);color:var(--text);min-height:100vh}
+html,body{max-width:100%;overflow-x:hidden}body{font-family:'Cormorant Garamond','Noto Serif TC',serif;background:var(--bg);color:var(--text);min-height:100vh}
 canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .wrap{position:relative;z-index:1;max-width:480px;margin:0 auto;padding:0 0 60px;overflow-x:hidden}
 #formPage{padding:16px 14px}
@@ -23,7 +23,7 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .lb{padding:5px 18px;font-size:.9rem;background:transparent;border:none;color:var(--dim);cursor:pointer;font-family:'Noto Serif TC',serif;transition:all .2s}
 .lb.active{background:rgba(201,168,76,.2);color:var(--gold)}
 .fc{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:17px 14px;margin-bottom:12px}
-.fc-h2{font-size:1.05rem;letter-spacing:.15em;color:var(--gold);margin-bottom:13px}
+.fc-h2{font-family:'Cinzel',serif;font-size:1.05rem;letter-spacing:.18em;color:var(--gold);margin-bottom:13px}
 .fi{margin-bottom:11px}
 .fi label{display:block;font-size:1.05rem;color:var(--vl);margin-bottom:4px}
 .fi input,.fi select{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:9px 12px;color:var(--text);font-size:.97rem;font-family:'Noto Serif TC',serif;-webkit-appearance:none;transition:border .2s}
@@ -52,7 +52,7 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .wnb:hover{border-color:var(--gold);color:var(--gold)}
 .wlbl{flex:1;text-align:center;font-size:.9rem;color:var(--gold2);padding:0 4px;line-height:1.4;word-break:break-all}
 .sec{padding:13px 12px 0}
-.slbl{font-size:.75rem;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px;word-break:break-all}
+.slbl{font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px;word-break:break-all}
 .slbl::after{content:'';flex:1;height:1px;background:var(--border)}
 .tip-item{font-size:.97rem;color:var(--gold2);font-weight:700;line-height:1.5;margin-bottom:4px;word-break:break-all;white-space:normal}
 .lgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
@@ -247,7 +247,7 @@ function moonSign(yr,mo,dy){var a=Math.floor((14-mo)/12),y=yr+4800-a,m=mo+12*a-3
 function weekHash(wk){var n=parseInt(wk.replace(/-/g,''));return((n*31+n%7*13)%1000+1000)%1000;}
 function getWeeklyData(wk,sun){var wn=getWN(wk),h=weekHash(wk),pat=WEEK_PATTERNS[wn%4];var sc=[],ai;for(ai=0;ai<12;ai++){var base=BASE_SCORES[ai][sun],delta=(h+ai*7)%3-1;sc.push(Math.max(1,Math.min(5,base+pat[ai]+delta)));}var off=(wn+Math.floor(sun/3))%12;var colZH=LUCKY_COL_ZH[(sun+off)%12],colEN=LUCKY_COL_EN[(sun+off)%12];var colCSS=LUCKY_COL_CSS[(sun+off)%12];var dayArr=LANG==='zh'?LUCKY_DAY_ZH:LUCKY_DAY_EN;var kwArr=LANG==='zh'?LUCKY_KW_ZH:LUCKY_KW_EN;var col=LANG==='zh'?colZH:colEN, day=dayArr[(sun+off)%12], kw=kwArr[(sun+off)%12];var daily=[],dayNamesZH=['（一）','（二）','（三）','（四）','（五）','（六）','（日）'],dayNamesEN=[' Mon',' Tue',' Wed',' Thu',' Fri',' Sat',' Sun'],sign_em=['♈','♉','♊','♋','♌','♍','♎','♏','♐','♑','♒','♓'];for(var di=0;di<7;di++){var dt=addDays(wk,di);var yr=dt.getFullYear(),mo=dt.getMonth()+1,dy=dt.getDate();var ms=moonSign(yr,mo,dy);var dName=(mo)+'/'+dy+(LANG==='zh'?dayNamesZH[di]:dayNamesEN[di]);var seed=(h+di*17+sun*3)%10;var moodRow=(wn+di)%2,moodIdx=(h+di)%8;var tagArr=LANG==='zh'?DAILY_TAGS_ZH[moodRow]:DAILY_TAGS_EN[moodRow];daily.push({d:dName,moon:sign_em[ms.sign]+' '+(LANG==='zh'?MOON_ZH[ms.sign]:MOON_EN[ms.sign]),t:(LANG==='zh'?DAILY_TEXT_ZH[seed]:DAILY_TEXT_EN[seed]),tag:tagArr[moodIdx%tagArr.length],cls:DAILY_CLS[seed]});}return{sc:sc,col:col,colCSS:colCSS,day:day,kw:kw,daily:daily};}
 function stars(n){var s='';for(var i=0;i<5;i++)s+='<span style="color:'+(i<n?'#c9a84c':'rgba(255,255,255,.15)')+'">★</span>';return s;}
-var USER=null,CWK=getMon(new Date());
+var USER=null;var _today=new Date();var _min=new Date('2026-01-01');var _max=new Date('2026-12-31');if(_today<_min)_today=_min;if(_today>_max)_today=_max;var CWK=getMon(_today);
 var FL={
  zh:{h2:'☽ 輸入出生資料',name:'姓名',date:'出生日期',time:'出生時間',city:'出生城市',lon:'出生地經度',lat:'出生地緯度',tz:'時區（UTC+）',ph_name:'你的名字',ph_city:'例：台北',ph_lon:'例：121.52（台北）',ph_lat:'例：25.04（台北）',ph_tz:'例：8（台灣）',gF:'女',gM:'男',gN:'不指定',btn:'✦ 產生我的個人化週報',req:'請填寫出生日期',sl:['✨ 本週幸運元素','📊 十二宮位週運','📅 每日運勢'],ll:['幸運色','幸運數字','幸運日','關鍵詞'],edit:'✎ 編輯資料',save:'💾 儲存週報',src:'免責聲明： 本站僅供占星學術研究參考，採用 Placidus 宮位制計算（同 astro.com），不具任何決策建議，使用者需自負風險。'},
  en:{h2:'☽ Enter Birth Data',name:'Name',date:'Birth Date',time:'Birth Time',city:'Birth City',lon:'Longitude',lat:'Latitude',tz:'Time Zone (UTC+)',ph_name:'Your name',ph_city:'e.g. Taipei',ph_lon:'e.g. 121.52 (Taipei)',ph_lat:'e.g. 25.04 (Taipei)',ph_tz:'e.g. 8 (Taiwan)',gF:'Female',gM:'Male',gN:'Other',btn:'✦ Generate My Weekly Report',req:'Please enter your birth date',sl:['✨ Lucky Elements','📊 12-House Forecast','📅 Daily Outlook'],ll:['Lucky Color','Lucky No.','Lucky Day','Keyword'],edit:'✎ Edit',save:'💾 Save Report',src:'Disclaimer: For astrological study only, uses Placidus houses (astro.com-compatible); not financial or life advice.'}
@@ -289,9 +289,9 @@ function openDetail(ai){
       for(var j=0;j<tp.length;j++){
         var idxP=tp[j].name;
         var sfx=LANG==='zh'?'座':'';
-        th+='<span style="display:inline-flex;align-items:center;gap:5px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.35);border-radius:20px;padding:4px 12px;margin:3px 3px 3px 0;font-size:.9rem;color:#f0d080">'
+        th+='<span style="display:inline-flex;align-items:center;gap:5px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.35);border-radius:20px;padding:6px 14px;margin:4px 4px 4px 0;font-size:1rem;color:#f0d080">'
           +PNZ[idxP]
-          +'<span style="color:#b0a8cc;font-size:.84rem">'+SIGNS[tp[j].sign]+sfx+'</span>'
+          +'<span style="color:#b0a8cc;font-size:.95rem">'+SIGNS[tp[j].sign]+sfx+'</span>'
           +'</span>';
         if(typeof TRANSIT_DESC_ZH!=='undefined'){
           var desc = LANG==='zh'?TRANSIT_DESC_ZH[idxP]:TRANSIT_DESC_EN[idxP];
@@ -299,13 +299,13 @@ function openDetail(ai){
         }
       }
       if(info){
-        var infoBlock='<ul style="margin-top:6px;padding-left:18px;font-size:.82rem;color:#d0caeb;line-height:1.5">'+info+'</ul>';
+        var infoBlock='<ul style="margin-top:6px;padding-left:18px;font-size:.95rem;color:#d0caeb;line-height:1.5">'+info+'</ul>';
         tblock.innerHTML=lbl+th+infoBlock;
       }else{
         tblock.innerHTML=lbl+th;
       }
     }else{
-      tblock.innerHTML='<div style="font-size:.84rem;color:#8880a8;padding:4px 0">'
+      tblock.innerHTML='<div style="font-size:.95rem;color:#8880a8;padding:6px 0">'
         +(LANG==='zh'?'☽ 本週無主要行星過境此宮，但依整體走勢，此宮仍有能量起伏。':'☽ No major planets transiting this house this week.')
         +'</div>';
     }
@@ -313,7 +313,7 @@ function openDetail(ai){
   document.getElementById('modal').classList.add('open');
 }
 function closeModal(){document.getElementById('modal').classList.remove('open');}
-function changeWeek(d){var dt=new Date(CWK);dt.setDate(dt.getDate()+d*7);CWK=getMon(dt);renderReport();}
+function changeWeek(d){var dt=new Date(CWK);dt.setDate(dt.getDate()+d*7);var min=new Date('2026-01-01');var max=new Date('2026-12-31');if(dt<min)dt=min;if(dt>max)dt=max;CWK=getMon(dt);renderReport();}
 function drawBg(){var c=document.getElementById('bg');if(!c)return;var ctx=c.getContext('2d');c.width=window.innerWidth;c.height=window.innerHeight;var g=ctx.createRadialGradient(c.width/2,0,0,c.width/2,c.height,c.height);g.addColorStop(0,'#0e0e22');g.addColorStop(1,'#06060e');ctx.fillStyle=g;ctx.fillRect(0,0,c.width,c.height);for(var i=0;i<200;i++){var x=Math.random()*c.width,y=Math.random()*c.height;ctx.beginPath();ctx.arc(x,y,Math.random()*1.2+.1,0,6.28);ctx.fillStyle='rgba(255,255,255,'+(Math.random()*.7+.1)+')';ctx.fill();}for(var j=0;j<10;j++){ctx.beginPath();ctx.arc(Math.random()*c.width,Math.random()*c.height,1.5,0,6.28);ctx.fillStyle='rgba(201,168,76,.55)';ctx.fill();}}
 window.addEventListener('resize',drawBg);
 window.onload=function(){drawBg();document.querySelectorAll('.lb').forEach(function(b){b.classList.toggle('active',b.dataset.l===LANG);});var saved=localStorage.getItem('oracle_u');if(saved){try{USER=JSON.parse(saved);document.getElementById('formPage').style.display='none';document.getElementById('reportPage').style.display='block';renderReport();}catch(e){localStorage.removeItem('oracle_u');renderForm();}}else{renderForm();}document.getElementById('modal').addEventListener('click',function(e){if(e.target===this)closeModal();});};
