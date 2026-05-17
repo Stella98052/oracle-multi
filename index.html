@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
 :root{--bg:#09090f;--card:#12121e;--border:rgba(201,168,76,.22);--gold:#c9a84c;--gold2:#f0d080;--violet:#7c6fa0;--vl:#b0a8cc;--text:#e4ddf2;--dim:#8880a8;--green:#5dbf8a;--red:#e07070;}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{max-width:100%;overflow-x:hidden}body{font-family:'Cormorant Garamond','Noto Serif TC',serif;background:var(--bg);color:var(--text);min-height:100vh}
+html,body{max-width:100%;overflow-x:hidden}body{font-family:'Cormorant Garamond','Noto Serif TC',serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.7}
 canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .wrap{position:relative;z-index:1;max-width:480px;margin:0 auto;padding:0 0 60px;overflow-x:hidden}
 #formPage{padding:16px 14px}
@@ -62,9 +62,9 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
 .atile{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:9px 4px 8px;text-align:center;cursor:pointer;transition:all .2s;overflow:hidden;word-break:break-all;min-width:0}
 .atile:hover{border-color:rgba(201,168,76,.5);transform:translateY(-2px)}
-.drow{display:flex;align-items:flex-start;gap:5px;padding:8px 9px;background:var(--card);border:1px solid var(--border);border-radius:10px;margin-bottom:6px;flex-wrap:wrap}
-.dr-d{font-size:1rem;color:var(--dim);min-width:68px;flex-shrink:0}
-.dr-moon{font-size:1rem;color:var(--vl);min-width:52px;flex-shrink:0;letter-spacing:-.01em}
+.drow{display:flex;align-items:flex-start;gap:7px;padding:9px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;margin-bottom:8px;flex-wrap:wrap}
+.dr-d{font-size:1.08rem;color:var(--gold2);min-width:74px;flex-shrink:0}
+.dr-moon{font-size:1.02rem;color:var(--vl);min-width:56px;flex-shrink:0;letter-spacing:-.01em}
 .dr-t{font-size:1.02rem;color:var(--text);flex:1;line-height:1.5;min-width:0;word-break:break-all}
 .dtag{font-size:.75rem;padding:2px 7px;border-radius:8px;border:1px solid;flex-shrink:0;white-space:nowrap}
 .dtag.up{border-color:rgba(93,191,138,.4);color:var(--green)}
@@ -76,9 +76,9 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .mhead{display:flex;align-items:center;gap:8px;margin-bottom:10px}
 .mclose{margin-left:auto;background:none;border:none;color:var(--dim);font-size:1.2rem;cursor:pointer}
 .mtrend{background:rgba(124,111,160,.12);border-left:3px solid var(--violet);border-radius:0 7px 7px 0;padding:8px 11px;font-size:1.05rem;color:var(--text);line-height:1.72;margin-bottom:10px}
-.mex{margin-top:10px;font-size:.92rem;color:var(--text);line-height:1.8}
+.mex{margin-top:12px;font-size:.96rem;color:var(--text);line-height:1.9}
 .macts{list-style:none}
-.macts li{padding:6px 0;font-size:.92rem;color:var(--text);line-height:1.6;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:7px}
+.macts li{padding:7px 0;font-size:.96rem;color:var(--text);line-height:1.7;border-bottom:1px solid rgba(255,255,255,.05);display:flex;gap:8px}
 .macts li:before{content:'▸';color:var(--gold);flex-shrink:0}
 .macts li:last-child{border-bottom:none}
 </style>
@@ -260,7 +260,7 @@ function fmtRange(wk){var m=new Date(wk),su=addDays(wk,6);if(LANG==='zh')return(
 function renderReport(){if(!USER)return;var f=FL[LANG],SIGNS=LANG==='zh'?SIGNS_ZH:SIGNS_EN,AREAS=LANG==='zh'?AREAS_ZH:AREAS_EN;var wn=getWN(CWK),wd=getWeeklyData(CWK,USER.sun);var nums=NUMS_MAP[String(USER.num)]||[USER.num,1];document.querySelectorAll('.lb').forEach(function(b){b.classList.toggle('active',b.dataset.l===LANG);});
   // key weekly tips
   var tips=[],i;for(i=0;i<wd.daily.length;i++){var d=wd.daily[i];if(d.cls==='low' && tips.length<2){tips.push((LANG==='zh'?'• ':'• ')+d.d+(LANG==='zh'?'：':' – ')+d.t);} }var maxIdx=0,maxVal=-1;for(i=0;i<wd.sc.length;i++){if(wd.sc[i]>maxVal){maxVal=wd.sc[i];maxIdx=i;}}tips.push(LANG==='zh'?'• '+AREAS[maxIdx]+'：本週能量特別強，適合優先安排相關重要事項。':'• '+AREAS[maxIdx]+': highlighted; prioritize related actions this week.');if(tips.length>3)tips=tips.slice(0,3);document.getElementById('tipTitle').textContent=LANG==='zh'?'⚠ 本週重大提示':'⚠ Key Alerts This Week';var kh='';for(i=0;i<tips.length;i++)kh+='<div class="tip-item">'+tips[i]+'</div>';document.getElementById('keyTips').innerHTML=kh;
-  document.getElementById('rAva').textContent=SIGN_EM[USER.sun];var yr2026=new Date(CWK).getFullYear();document.getElementById('rName').textContent=USER.name+(LANG==='zh'?' 的個人化週運 '+yr2026:' — Personal Weekly '+yr2026);document.getElementById('rTags').innerHTML='<span class="tag">☀️ '+(LANG==='zh'?'太陽 ':'')+SIGNS[USER.sun]+(LANG==='zh'?'座':'')+'</span>'+'<span class="tag">↑ '+(LANG==='zh'?'上升 ':'')+SIGNS[USER.ris]+(LANG==='zh'?'座 ':' ')+USER.risDeg+'°</span>'+'<span class="tag">🎂 '+USER.dv.replace(/-/g,'/')+'</span>'+'<span class="tag">📍 '+USER.city+'</span>';document.getElementById('rSrc').textContent=f.src;document.getElementById('edit-btn').textContent=f.edit;document.getElementById('save-btn').textContent=f.save;document.getElementById('wLbl').textContent='W'+wn+' · '+fmtRange(CWK);
+  document.getElementById('rAva').textContent=SIGN_EM[USER.sun];var yr2026=new Date(CWK).getFullYear();document.getElementById('rName').textContent=USER.name+(LANG==='zh'?' 的個人化週運 '+yr2026:' — Personal Weekly '+yr2026);document.getElementById('rTags').innerHTML='<span class="tag">☀️ '+(LANG==='zh'?'太陽 ':'')+SIGNS[USER.sun]+(LANG==='zh'?'座':'')+'</span>'+'<span class="tag">↑ '+(LANG==='zh'?'上升 ':'')+SIGNS[USER.ris]+(LANG==='zh'?'座 ':' ')+USER.risDeg+'°</span>'+'<span class="tag"># '+nums.join('·')+'</span>'+'<span class="tag">🎂 '+USER.dv.replace(/-/g,'/')+'</span>'+'<span class="tag">📍 '+USER.city+'</span>';document.getElementById('rSrc').textContent=f.src;document.getElementById('edit-btn').textContent=f.edit;document.getElementById('save-btn').textContent=f.save;document.getElementById('wLbl').textContent='W'+wn+' · '+fmtRange(CWK);
   document.getElementById('luckyGrid').innerHTML='<div class="lt"><div class="llt">'+f.ll[0]+'</div><div class="llv" style="display:flex;align-items:center;justify-content:center;gap:6px"><span style="width:10px;height:10px;border-radius:50%;background:'+wd.colCSS+';flex-shrink:0;display:inline-block"></span>'+wd.col+'</div></div>'+'<div class="lt"><div class="llt">'+f.ll[1]+'</div><div class="llv">'+nums.join('·')+'</div></div>'+'<div class="lt"><div class="llt">'+f.ll[2]+'</div><div class="llv">'+wd.day+'</div></div>'+'<div class="lt"><div class="llt">'+f.ll[3]+'</div><div class="llv">'+wd.kw+'</div></div>';
   var rb=[USER.ris%12,(USER.ris+4)%12],ah='';for(var ai=0;ai<12;ai++){var sc=wd.sc[ai];if(rb.indexOf(ai)>=0)sc=Math.min(5,sc+1);ah+='<div class="atile" onclick="openDetail('+ai+')">'+'<div style="font-size:1.4rem;margin-bottom:5px">'+AREAS_IC[ai]+'</div>'+'<div style="font-size:.97rem;color:var(--text);margin-bottom:4px;word-break:break-all;line-height:1.35">'+AREAS[ai]+'</div>'+'<div>'+stars(sc)+'</div></div>'; }document.getElementById('areasGrid').innerHTML=ah;var dh='';for(var di=0;di<wd.daily.length;di++){var d2=wd.daily[di];dh+='<div class="drow">'+'<div class="dr-d">'+d2.d+'</div>'+'<div class="dr-moon">'+d2.moon+'</div>'+'<div class="dr-t">'+d2.t+'</div>'+'<span class="dtag '+d2.cls+'">'+d2.tag+'</span></div>'; }document.getElementById('dailyList').innerHTML=dh;document.getElementById('sl1').textContent=f.sl[0];document.getElementById('sl2').textContent=f.sl[1];document.getElementById('sl3').textContent=f.sl[2];
   var notes="";for(var hi=0;hi<12;hi++){var label=(LANG==='zh'?AREAS_ZH[hi]:AREAS_EN[hi]);var ex=(LANG==='zh'?TRENDS_ZH[hi][2]:TRENDS_EN[hi][2]);notes+="<div style\"margin-bottom:6px\"><strong>"+label+"</strong>："+ex+"</div>";}var hn=document.getElementById("houseNotes");if(hn)hn.innerHTML=notes;}
