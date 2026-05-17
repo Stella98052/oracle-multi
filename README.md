@@ -1,6 +1,6 @@
 # Oracle Multi · 個人化十二宮位占星週報 2026
 
-> Personalized Weekly Astrology · 12-House Oracle for 2026
+> Personalized Weekly Astrology · 12-House Oracle for 2026 https://stella98052.github.io/oracle-multi/
 
 本專案是一個以 **Placidus 宮位制** 為基礎的個人化十二宮位週報 Web App，支援中英雙語顯示，目標使用情境為：
 
