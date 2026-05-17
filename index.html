@@ -285,14 +285,25 @@ function openDetail(ai){
         ?'<div style="font-size:.75rem;color:#8880a8;margin-bottom:6px;letter-spacing:.06em">本週流年行星過境此宮</div>'
         :'<div style="font-size:.75rem;color:#8880a8;margin-bottom:6px;letter-spacing:.06em">Planets transiting this house this week</div>';
       var th='';
+      var info='';
       for(var j=0;j<tp.length;j++){
+        var idxP=tp[j].name;
         var sfx=LANG==='zh'?'座':'';
         th+='<span style="display:inline-flex;align-items:center;gap:5px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.35);border-radius:20px;padding:4px 12px;margin:3px 3px 3px 0;font-size:.9rem;color:#f0d080">'
-          +PNZ[tp[j].name]
+          +PNZ[idxP]
           +'<span style="color:#b0a8cc;font-size:.84rem">'+SIGNS[tp[j].sign]+sfx+'</span>'
           +'</span>';
+        if(typeof TRANSIT_DESC_ZH!=='undefined'){
+          var desc = LANG==='zh'?TRANSIT_DESC_ZH[idxP]:TRANSIT_DESC_EN[idxP];
+          info+='<li>'+desc+'</li>';
+        }
       }
-      tblock.innerHTML=lbl+th;
+      if(info){
+        var infoBlock='<ul style="margin-top:6px;padding-left:18px;font-size:.82rem;color:#d0caeb;line-height:1.5">'+info+'</ul>';
+        tblock.innerHTML=lbl+th+infoBlock;
+      }else{
+        tblock.innerHTML=lbl+th;
+      }
     }else{
       tblock.innerHTML='<div style="font-size:.84rem;color:#8880a8;padding:4px 0">'
         +(LANG==='zh'?'☽ 本週無主要行星過境此宮，能量相對平靜。':'☽ No major planets transiting this house this week.')
@@ -311,6 +322,29 @@ window.onload=function(){drawBg();document.querySelectorAll('.lb').forEach(funct
 <script>
 // Load weekly transit signs from JSON and map to natal houses
 var WEEKLY_TRANSITS = null;
+var TRANSIT_DESC_ZH=[
+  '太陽過境此宮：放大這個領域的主題，適合主動行動與表現自己，但也會感到別人目光集中於此。',
+  '金星過境此宮：帶來人際和諧與愉悅經驗，有利於關係經營與享受生活，但要留意過度懶散或放縱。',
+  '水星過境此宮：溝通、思考與資訊流動變多，適合討論與學習，但也要防止焦慮與雜訊過多。',
+  '火星過境此宮：行動力與企圖心提升，推動事情向前，但也可能引發衝突、急躁或過勞。',
+  '木星過境此宮：放大機會與成長空間，適合擴張規畫與學習，但要留意理想過高或承諾過多。',
+  '土星過境此宮：要求務實與負責，適合建立結構與長期基礎，但可能感到壓力與限制。',
+  '天王星過境此宮：帶來突發變化與突破，促使你打破舊模式，但也讓節奏難以完全掌控。',
+  '海王星過境此宮：直覺與想像力提高，適合靜心與創作，但要避免理想化、迷糊或逃避現實。',
+  '冥王星過境此宮：深層清理與轉化的時間，可能經歷強烈事件，但有機會徹底翻修此領域。'
+];
+var TRANSIT_DESC_EN=[
+  'Sun in this house: highlights this area of life; good for taking initiative and showing up, but also brings extra visibility and pressure.',
+  'Venus in this house: softens and harmonizes this area; brings pleasure and support, but watch for laziness or overindulgence.',
+  'Mercury in this house: speeds up thinking and communication here; great for learning and discussion, but can create noise or overthinking.',
+  'Mars in this house: boosts drive and courage in this domain; helps you push forward, yet may trigger conflict, haste, or burnout.',
+  'Jupiter in this house: opens doors and growth opportunities; encourages optimism and expansion, but avoid overpromising or excess.',
+  'Saturn in this house: asks for discipline and responsibility; ideal for building lasting foundations, but can feel heavy or restrictive.',
+  'Uranus in this house: shakes up routines and patterns; supports innovation and freedom, yet brings sudden shifts and instability.',
+  'Neptune in this house: heightens sensitivity and imagination; supports spirituality and creativity, but can blur boundaries or facts.',
+  'Pluto in this house: intensifies themes here; exposes what must change and invites deep transformation, sometimes through power struggles.'
+];
+
 fetch('weekly_transit_signs_2026.json')
   .then(function(r){ return r.json(); })
   .then(function(data){ WEEKLY_TRANSITS = data; if (typeof USER !== 'undefined' && USER) { renderReport(); } })
