@@ -264,7 +264,43 @@ function renderReport(){if(!USER)return;var f=FL[LANG],SIGNS=LANG==='zh'?SIGNS_Z
   document.getElementById('luckyGrid').innerHTML='<div class="lt"><div class="llt">'+f.ll[0]+'</div><div class="llv" style="display:flex;align-items:center;justify-content:center;gap:6px"><span style="width:10px;height:10px;border-radius:50%;background:'+wd.colCSS+';flex-shrink:0;display:inline-block"></span>'+wd.col+'</div></div>'+'<div class="lt"><div class="llt">'+f.ll[1]+'</div><div class="llv">'+nums.join('·')+'</div></div>'+'<div class="lt"><div class="llt">'+f.ll[2]+'</div><div class="llv">'+wd.day+'</div></div>'+'<div class="lt"><div class="llt">'+f.ll[3]+'</div><div class="llv">'+wd.kw+'</div></div>';
   var rb=[USER.ris%12,(USER.ris+4)%12],ah='';for(var ai=0;ai<12;ai++){var sc=wd.sc[ai];if(rb.indexOf(ai)>=0)sc=Math.min(5,sc+1);ah+='<div class="atile" onclick="openDetail('+ai+')">'+'<div style="font-size:1.4rem;margin-bottom:5px">'+AREAS_IC[ai]+'</div>'+'<div style="font-size:.97rem;color:var(--text);margin-bottom:4px;word-break:break-all;line-height:1.35">'+AREAS[ai]+'</div>'+'<div>'+stars(sc)+'</div></div>'; }document.getElementById('areasGrid').innerHTML=ah;var dh='';for(var di=0;di<wd.daily.length;di++){var d2=wd.daily[di];dh+='<div class="drow">'+'<div class="dr-d">'+d2.d+'</div>'+'<div class="dr-moon">'+d2.moon+'</div>'+'<div class="dr-t">'+d2.t+'</div>'+'<span class="dtag '+d2.cls+'">'+d2.tag+'</span></div>'; }document.getElementById('dailyList').innerHTML=dh;document.getElementById('sl1').textContent=f.sl[0];document.getElementById('sl2').textContent=f.sl[1];document.getElementById('sl3').textContent=f.sl[2];
   var notes="";for(var hi=0;hi<12;hi++){var label=(LANG==='zh'?AREAS_ZH[hi]:AREAS_EN[hi]);var ex=(LANG==='zh'?TRENDS_ZH[hi][2]:TRENDS_EN[hi][2]);notes+="<div style\"margin-bottom:6px\"><strong>"+label+"</strong>："+ex+"</div>";}var hn=document.getElementById("houseNotes");if(hn)hn.innerHTML=notes;}
-function openDetail(ai){if(!USER)return;var AREAS=LANG==='zh'?AREAS_ZH:AREAS_EN,TR=LANG==='zh'?TRENDS_ZH:TRENDS_EN;var SIGNS=LANG==='zh'?SIGNS_ZH:SIGNS_EN,PNZ=LANG==='zh'?PLANET_NAMES_ZH:PLANET_NAMES_EN;var wd=getWeeklyData(CWK,USER.sun);var rb=[USER.ris%12,(USER.ris+4)%12],sc=wd.sc[ai];if(rb.indexOf(ai)>=0)sc=Math.min(5,sc+1);document.getElementById('dIco').textContent=AREAS_IC[ai];document.getElementById('dTitle').textContent=AREAS[ai];document.getElementById('dStars').innerHTML=stars(sc);document.getElementById('dTrend').textContent='☽ '+TR[ai][0];var li='';for(var i=0;i<TR[ai][1].length;i++)li+='<li>'+TR[ai][1][i]+'</li>';document.getElementById('dActs').innerHTML=li;document.getElementById('dEx').textContent=TR[ai][2];var tp=getTransitingPlanets(CWK,USER.ris,ai);var tblock=document.getElementById('dTransit');if(tblock){if(tp.length>0){var lbl=LANG==='zh'?'<div style="font-size:.75rem;color:#8880a8;margin-bottom:6px;letter-spacing:.06em">本週流年行星過境此宮</div>':'<div style="font-size:.75rem;color:#8880a8;margin-bottom:6px;letter-spacing:.06em">Planets transiting this house this week</div>';var th='';for(var j=0;j<tp.length;j++){var sfx=LANG==='zh'?'座':'';th+='<span style="display:inline-flex;align-items:center;gap:5px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.35);border-radius:20px;padding:4px 12px;margin:3px 3px 3px 0;font-size:.9rem;color:#f0d080">'+PNZ[tp[j].name]+'<span style="color:#b0a8cc;font-size:.84rem">'+SIGNS[tp[j].sign]+sfx+'</span>'+'</span>';}tblock.innerHTML=lbl+th;}else{tblock.innerHTML='<div style="font-size:.84rem;color:#8880a8;padding:4px 0">'+(LANG==='zh'?'☽ 本週無主要行星過境此宮，能量相對平靜。':'☽ No major planets transiting this house this week.')+'</div>';}}document.getElementById('modal').classList.add('open');}
+function openDetail(ai){
+  if(!USER)return;
+  var AREAS=LANG==='zh'?AREAS_ZH:AREAS_EN;
+  var SIGNS=LANG==='zh'?SIGNS_ZH:SIGNS_EN,PNZ=LANG==='zh'?PLANET_NAMES_ZH:PLANET_NAMES_EN;
+  var wd=getWeeklyData(CWK,USER.sun);
+  var rb=[USER.ris%12,(USER.ris+4)%12],sc=wd.sc[ai];
+  if(rb.indexOf(ai)>=0)sc=Math.min(5,sc+1);
+  document.getElementById('dIco').textContent=AREAS_IC[ai];
+  document.getElementById('dTitle').textContent=AREAS[ai];
+  document.getElementById('dStars').innerHTML=stars(sc);
+  document.getElementById('dTrend').textContent='';
+  document.getElementById('dActs').innerHTML='';
+  document.getElementById('dEx').textContent='';
+  var tp=getTransitingPlanets(CWK,USER.ris,ai);
+  var tblock=document.getElementById('dTransit');
+  if(tblock){
+    if(tp.length>0){
+      var lbl=LANG==='zh'
+        ?'<div style="font-size:.75rem;color:#8880a8;margin-bottom:6px;letter-spacing:.06em">本週流年行星過境此宮</div>'
+        :'<div style="font-size:.75rem;color:#8880a8;margin-bottom:6px;letter-spacing:.06em">Planets transiting this house this week</div>';
+      var th='';
+      for(var j=0;j<tp.length;j++){
+        var sfx=LANG==='zh'?'座':'';
+        th+='<span style="display:inline-flex;align-items:center;gap:5px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.35);border-radius:20px;padding:4px 12px;margin:3px 3px 3px 0;font-size:.9rem;color:#f0d080">'
+          +PNZ[tp[j].name]
+          +'<span style="color:#b0a8cc;font-size:.84rem">'+SIGNS[tp[j].sign]+sfx+'</span>'
+          +'</span>';
+      }
+      tblock.innerHTML=lbl+th;
+    }else{
+      tblock.innerHTML='<div style="font-size:.84rem;color:#8880a8;padding:4px 0">'
+        +(LANG==='zh'?'☽ 本週無主要行星過境此宮，能量相對平靜。':'☽ No major planets transiting this house this week.')
+        +'</div>';
+    }
+  }
+  document.getElementById('modal').classList.add('open');
+}tblock.innerHTML=lbl+th;}else{tblock.innerHTML='<div style="font-size:.84rem;color:#8880a8;padding:4px 0">'+(LANG==='zh'?'☽ 本週無主要行星過境此宮，能量相對平靜。':'☽ No major planets transiting this house this week.')+'</div>';}}document.getElementById('modal').classList.add('open');}
 function closeModal(){document.getElementById('modal').classList.remove('open');}
 function changeWeek(d){var dt=new Date(CWK);dt.setDate(dt.getDate()+d*7);CWK=getMon(dt);renderReport();}
 function drawBg(){var c=document.getElementById('bg');if(!c)return;var ctx=c.getContext('2d');c.width=window.innerWidth;c.height=window.innerHeight;var g=ctx.createRadialGradient(c.width/2,0,0,c.width/2,c.height,c.height);g.addColorStop(0,'#0e0e22');g.addColorStop(1,'#06060e');ctx.fillStyle=g;ctx.fillRect(0,0,c.width,c.height);for(var i=0;i<200;i++){var x=Math.random()*c.width,y=Math.random()*c.height;ctx.beginPath();ctx.arc(x,y,Math.random()*1.2+.1,0,6.28);ctx.fillStyle='rgba(255,255,255,'+(Math.random()*.7+.1)+')';ctx.fill();}for(var j=0;j<10;j++){ctx.beginPath();ctx.arc(Math.random()*c.width,Math.random()*c.height,1.5,0,6.28);ctx.fillStyle='rgba(201,168,76,.55)';ctx.fill();}}
