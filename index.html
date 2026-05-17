@@ -60,8 +60,8 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .llt{font-size:.9rem;color:var(--violet);margin-bottom:3px}
 .llv{font-size:1.02rem;color:var(--gold2);font-weight:700;line-height:1.35;word-break:break-all}
 .agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
-.atile{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:9px 4px 8px;text-align:center;cursor:pointer;transition:all .2s;overflow:hidden;word-break:break-all;min-width:0}
-.atile:hover{border-color:rgba(201,168,76,.5);transform:translateY(-2px)}
+.atile{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:9px 6px 10px;text-align:center;cursor:pointer;transition:all .2s;overflow:hidden;word-break:break-all;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;position:relative}
+@keyframes cardFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes tapPulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:.9;transform:scale(1.22)}}.atile{animation:cardFloat 3.4s ease-in-out infinite}.atile:nth-child(2){animation-delay:.3s}.atile:nth-child(3){animation-delay:.6s}.atile:nth-child(4){animation-delay:.9s}.atile:nth-child(5){animation-delay:1.2s}.atile:nth-child(6){animation-delay:1.5s}.atile:nth-child(7){animation-delay:1.8s}.atile:nth-child(8){animation-delay:2.1s}.atile:nth-child(9){animation-delay:2.4s}.atile:nth-child(10){animation-delay:2.7s}.atile:nth-child(11){animation-delay:3.0s}.atile:nth-child(12){animation-delay:3.3s}.atile:hover{border-color:rgba(201,168,76,.75);transform:translateY(-6px) scale(1.04);box-shadow:0 8px 28px rgba(201,168,76,.28);animation:none}.atile::before{content:"";position:absolute;top:7px;right:7px;width:7px;height:7px;border-radius:50%;background:rgba(201,168,76,.6);animation:tapPulse 2.2s ease-in-out infinite}.atile:hover::before{animation:none;opacity:0}
 .drow{display:flex;align-items:flex-start;gap:8px;padding:10px 10px;background:var(--card);border:1px solid var(--border);border-radius:10px;margin-bottom:8px;flex-wrap:wrap}
 .dr-d{font-size:1.06rem;color:var(--gold2);min-width:80px;flex-shrink:0;line-height:1.25}
 .dr-moon{font-size:.96rem;color:var(--vl);letter-spacing:-.01em}
@@ -70,9 +70,9 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .dtag.up{border-color:rgba(93,191,138,.4);color:var(--green)}
 .dtag.mid{border-color:var(--border);color:var(--gold)}
 .dtag.low{border-color:rgba(224,112,112,.3);color:var(--red)}
-.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:100;align-items:flex-end;justify-content:center}
+@keyframes sheetFlipIn{0%{opacity:0;transform:perspective(800px) rotateX(12deg) translateY(60px);}100%{opacity:1;transform:perspective(800px) rotateX(0) translateY(0);}}.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:100;align-items:flex-end;justify-content:center}
 .modal.open{display:flex}
-.msheet{background:#0e0e1c;border:1px solid var(--border);border-radius:16px 16px 0 0;padding:16px 14px 32px;width:100%;max-width:480px;max-height:80vh;overflow-y:auto;overflow-x:hidden;word-break:break-all}
+.msheet{background:#0e0e1c;border:1px solid var(--border);border-radius:16px 16px 0 0;padding:16px 14px 32px;width:100%;max-width:480px;max-height:80vh;overflow-y:auto;overflow-x:hidden;word-break:break-all;will-change:transform,opacity;transform-origin:center bottom}
 .mhead{display:flex;align-items:center;gap:8px;margin-bottom:10px}
 .mclose{margin-left:auto;background:none;border:none;color:var(--dim);font-size:1.2rem;cursor:pointer}
 .mtrend{background:rgba(124,111,160,.12);border-left:3px solid var(--violet);border-radius:0 7px 7px 0;padding:9px 12px;font-size:1.06rem;color:var(--text);line-height:1.8;margin-bottom:12px}
@@ -127,6 +127,7 @@ canvas#bg{position:fixed;inset:0;z-index:0;pointer-events:none}
     <div class="hero-btns">
       <button class="hbtn" id="edit-btn" onclick="goEdit()">✎ 編輯資料</button>
       <button class="hbtn" id="save-btn" onclick="saveReport()">💾 儲存週報</button>
+      <button class="hbtn" id="share-btn" onclick="shareCard()" style="background:linear-gradient(135deg,rgba(123,63,160,.85),rgba(201,168,76,.85));border-color:rgba(201,168,76,.6)">✦ 分享週運卡</button>
     </div>
     <div class="hero-lang">
       <div class="lang-wrap">
@@ -260,9 +261,9 @@ function fmtRange(wk){var m=new Date(wk),su=addDays(wk,6);if(LANG==='zh')return(
 function renderReport(){if(!USER)return;var f=FL[LANG],SIGNS=LANG==='zh'?SIGNS_ZH:SIGNS_EN,AREAS=LANG==='zh'?AREAS_ZH:AREAS_EN;var wn=getWN(CWK),wd=getWeeklyData(CWK,USER.sun);var nums=NUMS_MAP[String(USER.num)]||[USER.num,1];document.querySelectorAll('.lb').forEach(function(b){b.classList.toggle('active',b.dataset.l===LANG);});
   // key weekly tips
   var tips=[],i;for(i=0;i<wd.daily.length;i++){var d=wd.daily[i];if(d.cls==='low' && tips.length<2){tips.push((LANG==='zh'?'• ':'• ')+d.d+(LANG==='zh'?'：':' – ')+d.t);} }var maxIdx=0,maxVal=-1;for(i=0;i<wd.sc.length;i++){if(wd.sc[i]>maxVal){maxVal=wd.sc[i];maxIdx=i;}}tips.push(LANG==='zh'?'• '+AREAS[maxIdx]+'：本週能量特別強，適合優先安排相關重要事項。':'• '+AREAS[maxIdx]+': highlighted; prioritize related actions this week.');if(tips.length>3)tips=tips.slice(0,3);document.getElementById('tipTitle').textContent=LANG==='zh'?'⚠ 本週重大提示':'⚠ Key Alerts This Week';var kh='';for(i=0;i<tips.length;i++)kh+='<div class="tip-item">'+tips[i]+'</div>';document.getElementById('keyTips').innerHTML=kh;
-  document.getElementById('rAva').textContent=SIGN_EM[USER.sun];var yr2026=new Date(CWK).getFullYear();document.getElementById('rName').textContent=USER.name+(LANG==='zh'?' 的個人化週運 '+yr2026:' — Personal Weekly '+yr2026);document.getElementById('rTags').innerHTML='<span class="tag">🎂 '+USER.dv.replace(/-/g,'/')+'</span>'+'<span class="tag">📍 '+USER.city+'</span>'+'<span class="tag">☀️ '+(LANG==='zh'?'太陽 ':'')+SIGNS[USER.sun]+(LANG==='zh'?'座':'')+'</span>'+'<span class="tag">↑ '+(LANG==='zh'?'上升 ':'')+SIGNS[USER.ris]+(LANG==='zh'?'座 ':' ')+USER.risDeg+'°</span>'+'<span class="tag">'+(LANG==='zh'?'✶ 幸運數字：':'✶ Lucky numbers: ')+nums.join('·')+'</span>';document.getElementById('rSrc').textContent=f.src;document.getElementById('edit-btn').textContent=f.edit;document.getElementById('save-btn').textContent=f.save;document.getElementById('wLbl').textContent='W'+wn+' · '+fmtRange(CWK);
+  document.getElementById('rAva').textContent=SIGN_EM[USER.sun];var yr2026=new Date(CWK).getFullYear();document.getElementById('rName').textContent=USER.name+(LANG==='zh'?' 的個人化週運 '+yr2026:' — Personal Weekly '+yr2026);document.getElementById('rTags').innerHTML='<span class="tag">🎂 '+USER.dv.replace(/-/g,'/')+'</span>'+'<span class="tag">📍 '+USER.city+'</span>'+'<span class="tag">☀️ '+(LANG==='zh'?'太陽 ':'')+SIGNS[USER.sun]+(LANG==='zh'?'座':'')+'</span>'+'<span class="tag">↑ '+(LANG==='zh'?'上升 ':'')+SIGNS[USER.ris]+(LANG==='zh'?'座 ':' ')+USER.risDeg+'°</span>'+'<span class="tag">'+(LANG==='zh'?'✶ 幸運數字：':'✶ Lucky numbers: ')+nums.join('·')+'</span>';document.getElementById('rSrc').textContent=f.src;document.getElementById('edit-btn').textContent=f.edit;document.getElementById('save-btn').textContent=f.save;var sb=document.getElementById('share-btn');if(sb)sb.childNodes[sb.childNodes.length-1].textContent=' '+(LANG==='zh'?'分享週運卡':'Share Card');document.getElementById('wLbl').textContent='W'+wn+' · '+fmtRange(CWK);
   document.getElementById('luckyGrid').innerHTML='<div class="lt"><div class="llt">'+f.ll[0]+'</div><div class="llv" style="display:flex;align-items:center;justify-content:center;gap:6px"><span style="width:10px;height:10px;border-radius:50%;background:'+wd.colCSS+';flex-shrink:0;display:inline-block"></span>'+wd.col+'</div></div>'+'<div class="lt"><div class="llt">'+f.ll[2]+'</div><div class="llv">'+wd.day+'</div></div>'+'<div class="lt"><div class="llt">'+f.ll[3]+'</div><div class="llv">'+wd.kw+'</div></div>';
-  var rb=[USER.ris%12,(USER.ris+4)%12],ah='';for(var ai=0;ai<12;ai++){var sc=wd.sc[ai];if(rb.indexOf(ai)>=0)sc=Math.min(5,sc+1);ah+='<div class="atile" onclick="openDetail('+ai+')">'+'<div style="font-size:1.4rem;margin-bottom:5px">'+AREAS_IC[ai]+'</div>'+'<div style="font-size:.97rem;color:var(--text);margin-bottom:4px;word-break:break-all;line-height:1.35;min-height:2.7em;display:flex;align-items:flex-end;justify-content:center">'+AREAS[ai]+'</div>'+'<div>'+stars(sc)+'</div></div>'; }document.getElementById('areasGrid').innerHTML=ah;var dh='';for(var di=0;di<wd.daily.length;di++){var d2=wd.daily[di];dh+='<div class="drow">'+'<div class="dr-d">'+d2.d+'<br><span class="dr-moon">'+d2.moon+'</span></div>'+'<div class="dr-t">'+d2.t+'</div>'+'<span class="dtag '+d2.cls+'">'+d2.tag+'</span></div>'; }document.getElementById('dailyList').innerHTML=dh;document.getElementById('sl1').textContent=f.sl[0];document.getElementById('sl2').textContent=f.sl[1];document.getElementById('sl3').textContent=f.sl[2];
+  var rb=[USER.ris%12,(USER.ris+4)%12],ah='';for(var ai=0;ai<12;ai++){var sc=wd.sc[ai];if(rb.indexOf(ai)>=0)sc=Math.min(5,sc+1);ah+='<div class="atile" onclick="openDetail('+ai+')">'+'<div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;width:100%">'+'<div style="font-size:1.35rem">'+AREAS_IC[ai]+'</div>'+'<div style="font-size:.94rem;color:var(--text);word-break:break-all;line-height:1.35">'+AREAS[ai]+'</div>'+'</div>'+'<div style="margin-top:6px;width:100%">'+stars(sc)+'</div>'+'</div>'; }document.getElementById('areasGrid').innerHTML=ah;document.querySelectorAll('.atile').forEach(function(t,i){t.style.animationPlayState='paused';t.style.opacity='0';t.style.transform='translateY(30px) scale(.9)';setTimeout(function(){t.style.transition='opacity .38s ease, transform .38s cubic-bezier(.23,1,.32,1)';t.style.opacity='1';t.style.transform='';setTimeout(function(){t.style.transition='';t.style.animationPlayState='running';},420);},80+i*65);});var dh='';for(var di=0;di<wd.daily.length;di++){var d2=wd.daily[di];dh+='<div class="drow">'+'<div class="dr-d">'+d2.d+'<br><span class="dr-moon">'+d2.moon+'</span></div>'+'<div class="dr-t">'+d2.t+'</div>'+'<span class="dtag '+d2.cls+'">'+d2.tag+'</span></div>'; }document.getElementById('dailyList').innerHTML=dh;document.getElementById('sl1').textContent=f.sl[0];document.getElementById('sl2').textContent=f.sl[1];document.getElementById('sl3').textContent=f.sl[2];
   var notes="";for(var hi=0;hi<12;hi++){var label=(LANG==='zh'?AREAS_ZH[hi]:AREAS_EN[hi]);var ex=(LANG==='zh'?TRENDS_ZH[hi][2]:TRENDS_EN[hi][2]);notes+="<div style\"margin-bottom:6px\"><strong>"+label+"</strong>："+ex+"</div>";}var hn=document.getElementById("houseNotes");if(hn)hn.innerHTML=notes;}
 function openDetail(ai){
   if(!USER)return;
@@ -310,8 +311,68 @@ function openDetail(ai){
         +'</div>';
     }
   }
-  document.getElementById('modal').classList.add('open');
+  var mo=document.getElementById('modal');mo.classList.add('open');var ms=mo.querySelector('.msheet');if(ms){ms.style.animation='none';ms.offsetHeight;ms.style.animation='sheetFlipIn .45s cubic-bezier(.23,1,.32,1) forwards';}
 }
+
+function shareCard(){
+  if(!USER)return;
+  var SIGNS=LANG==='zh'?SIGNS_ZH:SIGNS_EN,AREAS=LANG==='zh'?AREAS_ZH:AREAS_EN;
+  var wd=getWeeklyData(CWK,USER.sun);
+  var wn=getWN(CWK);
+  var canvas=document.createElement('canvas');
+  canvas.width=750;canvas.height=1000;
+  var ctx=canvas.getContext('2d');
+  // background gradient
+  var grd=ctx.createLinearGradient(0,0,0,1000);
+  grd.addColorStop(0,'#0a0818');grd.addColorStop(1,'#160d2a');
+  ctx.fillStyle=grd;ctx.fillRect(0,0,750,1000);
+  // star dots
+  ctx.fillStyle='rgba(255,255,255,.55)';
+  for(var s=0;s<120;s++){ctx.beginPath();ctx.arc(Math.random()*750,Math.random()*1000,Math.random()*1.5+.3,0,Math.PI*2);ctx.fill();}
+  // top glow
+  var glw=ctx.createRadialGradient(375,0,0,375,0,400);
+  glw.addColorStop(0,'rgba(120,60,200,.35)');glw.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=glw;ctx.fillRect(0,0,750,750);
+  // emoji avatar
+  ctx.font='80px serif';ctx.textAlign='center';ctx.fillText(SIGN_EM[USER.sun],375,130);
+  // name
+  ctx.fillStyle='#f0d080';ctx.font='bold 34px serif';ctx.fillText(USER.name+(LANG==='zh'?' · 週運':'\'s Weekly'),375,185);
+  // week
+  ctx.fillStyle='rgba(201,168,76,.7)';ctx.font='22px sans-serif';ctx.fillText('W'+wn+' · '+fmtRange(CWK),375,222);
+  // divider
+  ctx.strokeStyle='rgba(201,168,76,.35)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(80,245);ctx.lineTo(670,245);ctx.stroke();
+  // lucky elements
+  ctx.fillStyle='#c9a84c';ctx.font='bold 20px sans-serif';
+  ctx.fillText((LANG==='zh'?'幸運色':'Lucky Color')+': '+wd.col,375,285);
+  ctx.fillText((LANG==='zh'?'幸運日':'Lucky Day')+': '+wd.day,375,318);
+  ctx.fillText((LANG==='zh'?'關鍵詞':'Keyword')+': '+wd.kw,375,351);
+  // divider 2
+  ctx.beginPath();ctx.moveTo(80,375);ctx.lineTo(670,375);ctx.stroke();
+  // top 3 house scores
+  ctx.fillStyle='rgba(255,255,255,.85)';ctx.font='bold 22px sans-serif';
+  ctx.fillText(LANG==='zh'?'本週能量排行':'Top Energy Houses',375,410);
+  var sorted=wd.sc.map(function(v,i){return{i:i,v:v};}).sort(function(a,b){return b.v-a.v;}).slice(0,3);
+  for(var k=0;k<sorted.length;k++){
+    var stars_str='';for(var ss=0;ss<sorted[k].v;ss++)stars_str+='★';
+    ctx.fillStyle='#d4b8f0';ctx.font='20px sans-serif';
+    ctx.fillText(AREAS_IC[sorted[k].i]+' '+AREAS[sorted[k].i]+' '+stars_str,375,448+k*38);
+  }
+  // divider 3
+  ctx.beginPath();ctx.moveTo(80,570);ctx.lineTo(670,570);ctx.stroke();
+  // watermark
+  ctx.fillStyle='rgba(201,168,76,.5)';ctx.font='18px sans-serif';
+  ctx.fillText('Oracle 2026 · Personal Astrology Weekly',375,610);
+  // border frame
+  ctx.strokeStyle='rgba(201,168,76,.4)';ctx.lineWidth=2;
+  ctx.strokeRect(18,18,714,964);
+  ctx.strokeStyle='rgba(201,168,76,.15)';ctx.lineWidth=1;
+  ctx.strokeRect(28,28,694,944);
+  // download
+  var dataUrl=canvas.toDataURL('image/png');
+  var w=window.open();
+  if(w){w.document.write('<html><body style="margin:0;background:#0a0818"><p style="color:#c9a84c;font-family:sans-serif;text-align:center;padding:12px;font-size:.9rem">'+(LANG==="zh"?"長按圖片儲存 / 右鍵另存圖片":"Long-press to save / right-click Save As")+"</p><img src='"+dataUrl+"' style='max-width:100%;display:block;margin:0 auto'></body></html>");w.document.close();}
+}
+
 function closeModal(){document.getElementById('modal').classList.remove('open');}
 function changeWeek(d){var dt=new Date(CWK);dt.setDate(dt.getDate()+d*7);var min=new Date('2026-01-01');var max=new Date('2026-12-31');if(dt<min)dt=min;if(dt>max)dt=max;CWK=getMon(dt);renderReport();}
 function drawBg(){var c=document.getElementById('bg');if(!c)return;var ctx=c.getContext('2d');c.width=window.innerWidth;c.height=window.innerHeight;var g=ctx.createRadialGradient(c.width/2,0,0,c.width/2,c.height,c.height);g.addColorStop(0,'#0e0e22');g.addColorStop(1,'#06060e');ctx.fillStyle=g;ctx.fillRect(0,0,c.width,c.height);for(var i=0;i<200;i++){var x=Math.random()*c.width,y=Math.random()*c.height;ctx.beginPath();ctx.arc(x,y,Math.random()*1.2+.1,0,6.28);ctx.fillStyle='rgba(255,255,255,'+(Math.random()*.7+.1)+')';ctx.fill();}for(var j=0;j<10;j++){ctx.beginPath();ctx.arc(Math.random()*c.width,Math.random()*c.height,1.5,0,6.28);ctx.fillStyle='rgba(201,168,76,.55)';ctx.fill();}}
