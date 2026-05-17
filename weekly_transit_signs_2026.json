@@ -1,0 +1,4058 @@
+{
+  "2026-01": {
+    "year": 2026,
+    "weekNumber": 1,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-02": {
+    "year": 2026,
+    "weekNumber": 2,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-03": {
+    "year": 2026,
+    "weekNumber": 3,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-04": {
+    "year": 2026,
+    "weekNumber": 4,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-05": {
+    "year": 2026,
+    "weekNumber": 5,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-06": {
+    "year": 2026,
+    "weekNumber": 6,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-07": {
+    "year": 2026,
+    "weekNumber": 7,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-08": {
+    "year": 2026,
+    "weekNumber": 8,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-09": {
+    "year": 2026,
+    "weekNumber": 9,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-10": {
+    "year": 2026,
+    "weekNumber": 10,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-11": {
+    "year": 2026,
+    "weekNumber": 11,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-12": {
+    "year": 2026,
+    "weekNumber": 12,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-13": {
+    "year": 2026,
+    "weekNumber": 13,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-14": {
+    "year": 2026,
+    "weekNumber": 14,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-15": {
+    "year": 2026,
+    "weekNumber": 15,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-16": {
+    "year": 2026,
+    "weekNumber": 16,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-17": {
+    "year": 2026,
+    "weekNumber": 17,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-18": {
+    "year": 2026,
+    "weekNumber": 18,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-19": {
+    "year": 2026,
+    "weekNumber": 19,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-20": {
+    "year": 2026,
+    "weekNumber": 20,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-21": {
+    "year": 2026,
+    "weekNumber": 21,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-22": {
+    "year": 2026,
+    "weekNumber": 22,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-23": {
+    "year": 2026,
+    "weekNumber": 23,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-24": {
+    "year": 2026,
+    "weekNumber": 24,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-25": {
+    "year": 2026,
+    "weekNumber": 25,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-26": {
+    "year": 2026,
+    "weekNumber": 26,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-27": {
+    "year": 2026,
+    "weekNumber": 27,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-28": {
+    "year": 2026,
+    "weekNumber": 28,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 3,
+        "signEn": "Cancer",
+        "signZh": "巨蟹"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-29": {
+    "year": 2026,
+    "weekNumber": 29,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-30": {
+    "year": 2026,
+    "weekNumber": 30,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-31": {
+    "year": 2026,
+    "weekNumber": 31,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-32": {
+    "year": 2026,
+    "weekNumber": 32,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-33": {
+    "year": 2026,
+    "weekNumber": 33,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-34": {
+    "year": 2026,
+    "weekNumber": 34,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-35": {
+    "year": 2026,
+    "weekNumber": 35,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-36": {
+    "year": 2026,
+    "weekNumber": 36,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 5,
+        "signEn": "Virgo",
+        "signZh": "處女"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-37": {
+    "year": 2026,
+    "weekNumber": 37,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-38": {
+    "year": 2026,
+    "weekNumber": 38,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-39": {
+    "year": 2026,
+    "weekNumber": 39,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-40": {
+    "year": 2026,
+    "weekNumber": 40,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 6,
+        "signEn": "Libra",
+        "signZh": "天秤"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-41": {
+    "year": 2026,
+    "weekNumber": 41,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-42": {
+    "year": 2026,
+    "weekNumber": 42,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-43": {
+    "year": 2026,
+    "weekNumber": 43,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-44": {
+    "year": 2026,
+    "weekNumber": 44,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 7,
+        "signEn": "Scorpio",
+        "signZh": "天蠍"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-45": {
+    "year": 2026,
+    "weekNumber": 45,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-46": {
+    "year": 2026,
+    "weekNumber": 46,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-47": {
+    "year": 2026,
+    "weekNumber": 47,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 8,
+        "signEn": "Sagittarius",
+        "signZh": "射手"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-48": {
+    "year": 2026,
+    "weekNumber": 48,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-49": {
+    "year": 2026,
+    "weekNumber": 49,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-50": {
+    "year": 2026,
+    "weekNumber": 50,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-51": {
+    "year": 2026,
+    "weekNumber": 51,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 1,
+        "signEn": "Taurus",
+        "signZh": "金牛"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  },
+  "2026-52": {
+    "year": 2026,
+    "weekNumber": 52,
+    "planets": [
+      {
+        "planetIndex": 0,
+        "planetEn": "Sun",
+        "planetZh": "太陽",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 1,
+        "planetEn": "Venus",
+        "planetZh": "金星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 2,
+        "planetEn": "Mercury",
+        "planetZh": "水星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      },
+      {
+        "planetIndex": 3,
+        "planetEn": "Mars",
+        "planetZh": "火星",
+        "signIndex": 10,
+        "signEn": "Aquarius",
+        "signZh": "水瓶"
+      },
+      {
+        "planetIndex": 4,
+        "planetEn": "Jupiter",
+        "planetZh": "木星",
+        "signIndex": 4,
+        "signEn": "Leo",
+        "signZh": "獅子"
+      },
+      {
+        "planetIndex": 5,
+        "planetEn": "Saturn",
+        "planetZh": "土星",
+        "signIndex": 11,
+        "signEn": "Pisces",
+        "signZh": "雙魚"
+      },
+      {
+        "planetIndex": 6,
+        "planetEn": "Uranus",
+        "planetZh": "天王星",
+        "signIndex": 2,
+        "signEn": "Gemini",
+        "signZh": "雙子"
+      },
+      {
+        "planetIndex": 7,
+        "planetEn": "Neptune",
+        "planetZh": "海王星",
+        "signIndex": 0,
+        "signEn": "Aries",
+        "signZh": "牡羊"
+      },
+      {
+        "planetIndex": 8,
+        "planetEn": "Pluto",
+        "planetZh": "冥王星",
+        "signIndex": 9,
+        "signEn": "Capricorn",
+        "signZh": "魔羯"
+      }
+    ]
+  }
+}
